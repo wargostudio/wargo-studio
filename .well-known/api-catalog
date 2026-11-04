@@ -1,0 +1,13 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://www.wargostudio.com/",
+      "service-doc": [
+        { "href": "https://www.wargostudio.com/servicios.html", "type": "text/html", "title": "Servicios de Wargo Studio" }
+      ],
+      "describedby": [
+        { "href": "https://www.wargostudio.com/llms.txt", "type": "text/plain", "title": "Descripción del sitio para agentes" }
+      ]
+    }
+  ]
+}

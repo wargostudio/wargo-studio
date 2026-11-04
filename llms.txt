@@ -1,0 +1,27 @@
+# Wargo Studio
+
+> Agencia de transformación digital. Acompaña a empresas en la implementación de tecnología y la mejora de procesos: diseño gráfico, marketing digital, diseño y desarrollo web, y gestión de productos en ERP. 9 años de experiencia y más de 180 proyectos creados.
+
+## Páginas
+
+- [Inicio](https://www.wargostudio.com/): presentación de la agencia, servicios, metodología y testimonios destacados.
+- [Nosotros](https://www.wargostudio.com/nosotros.html): enfoque, valores y palabras del fundador, Juan Andrés Cattaneo (CEO).
+- [Servicios](https://www.wargostudio.com/servicios.html): detalle de cada servicio ofrecido.
+- [Testimonios](https://www.wargostudio.com/testimonios.html): videos de clientes.
+- [Contacto](https://www.wargostudio.com/contacto.html): email, teléfono, redes y WhatsApp.
+
+## Servicios
+
+- Diseño y desarrollo web: landing pages, páginas web, e-commerce, posicionamiento SEO, emails institucionales, Google Workspace, hosting, mantenimiento y soporte.
+- Personalización y gestión de productos en ERP: carga y actualización de productos, imágenes, descripciones, categorías, atributos, normalización de datos y adaptación para e-commerce.
+- Marketing digital: manejo de redes sociales, diseño de gráficas y videos, generación de leads automatizando LinkedIn.
+- Diseño gráfico: brochures, catálogos, tarjetas personales, diseño editorial.
+
+## Contacto
+
+- Email: info@wargostudio.com
+- Teléfono / WhatsApp: +54 9 3518 19-3172
+- Instagram: https://www.instagram.com/wargostudio
+- LinkedIn: https://www.linkedin.com/company/wargostudio
+- YouTube: https://www.youtube.com/@wargostudio
+- TikTok: https://www.tiktok.com/@wargostudio

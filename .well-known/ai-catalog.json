@@ -1,0 +1,42 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Wargo Studio",
+    "identifier": "https://www.wargostudio.com"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:wargostudio.com:skill:contactar-wargo-studio",
+      "displayName": "Contactar a Wargo Studio",
+      "type": "text/markdown",
+      "url": "https://www.wargostudio.com/.well-known/agent-skills/contactar-wargo-studio/SKILL.md",
+      "representativeQueries": [
+        "necesito una agencia de transformación digital",
+        "quiero que me hagan una página web para mi empresa",
+        "cómo contacto a Wargo Studio",
+        "busco ayuda para cargar y ordenar productos en mi ERP"
+      ]
+    },
+    {
+      "identifier": "urn:air:wargostudio.com:doc:descripcion-del-sitio",
+      "displayName": "Descripción de Wargo Studio y sus servicios",
+      "type": "text/plain",
+      "url": "https://www.wargostudio.com/llms.txt",
+      "representativeQueries": [
+        "qué servicios ofrece Wargo Studio",
+        "agencia de diseño y desarrollo web con gestión de ERP",
+        "marketing digital y generación de leads por LinkedIn"
+      ]
+    },
+    {
+      "identifier": "urn:air:wargostudio.com:catalog:api-catalog",
+      "displayName": "Catálogo de recursos documentados de Wargo Studio",
+      "type": "application/linkset+json",
+      "url": "https://www.wargostudio.com/.well-known/api-catalog",
+      "representativeQueries": [
+        "documentación de servicios de Wargo Studio",
+        "recursos descubribles del sitio wargostudio.com"
+      ]
+    }
+  ]
+}
