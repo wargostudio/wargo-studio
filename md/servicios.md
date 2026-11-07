@@ -6,11 +6,11 @@ url: https://www.wargostudio.com/servicios.html
 
 Servicios
 
-# Cuatro áreas de trabajo, una sola transformación.
+# Cinco áreas de trabajo, una sola transformación.
 
-Diseño gráfico, marketing digital, desarrollo web y gestión de catálogos en ERP: cada servicio resuelve una parte concreta de tu operación digital.
+Desarrollo web y de software, gestión de catálogos en ERP, marketing digital y diseño gráfico: cada servicio resuelve una parte concreta de tu operación digital.
 
-01 / 04
+01 / 05
 
 ## Diseño y desarrollo web
 
@@ -24,7 +24,17 @@ Sitios y sistemas construidos para posicionar, convertir y sostenerse en el tiem
 - Hosting
 - Mantenimiento y soporte
 
-02 / 04
+02 / 05
+
+## Desarrollo de aplicaciones y software a medida
+
+Aplicaciones y sistemas pensados para cómo trabaja tu empresa: desde un ERP básico hasta un portal para tus clientes, construidos a tu medida.
+- ERP básicos
+- Software de gestión de tareas
+- Portales de clientes
+- Soluciones a medida
+
+03 / 05
 
 ## Personalización y gestión de productos en ERP
 
@@ -40,7 +50,7 @@ Ordenamos, optimizamos y gestionamos catálogos extensos dentro de tu sistema ER
 - Configuración de campos específicos según el ERP
 - Revisión y control de la información cargada
 
-03 / 04
+04 / 05
 
 ## Marketing digital
 
@@ -49,7 +59,7 @@ Presencia constante en tus canales y prospección activa para generar oportunida
 - Diseño de gráficas y videos
 - Generación de leads automatizando LinkedIn
 
-04 / 04
+05 / 05
 
 ## Diseño gráfico
 
@@ -63,7 +73,7 @@ Piezas de comunicación consistentes con tu identidad, pensadas para cada punto 
 
 ## Contanos qué necesita tu empresa hoy.
 
-Podemos empezar por una sola área o acompañarte en las cuatro al mismo tiempo.
+Podemos empezar por una sola área o acompañarte en las cinco al mismo tiempo.
 
 [Hablemos de tu proyecto](https://www.wargostudio.com/contacto.html)
 

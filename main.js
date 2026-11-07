@@ -268,6 +268,7 @@
     if (!mc || typeof mc.registerTool !== "function") return;
 
     var SERVICES = {
+      "desarrollo-software": { name: "Desarrollo de aplicaciones y software a medida", items: ["ERP básicos", "Software de gestión de tareas", "Portales de clientes", "Soluciones a medida"] },
       "diseno-desarrollo-web": { name: "Diseño y desarrollo web", items: ["Landing pages", "Páginas web", "E-commerce", "Posicionamiento SEO", "Emails institucionales", "Google Workspace", "Hosting", "Mantenimiento y soporte"] },
       "erp": { name: "Personalización y gestión de productos en ERP", items: ["Carga y actualización de productos", "Incorporación y optimización de imágenes", "Redacción y carga de descripciones", "Organización por categorías y rubros", "Configuración de etiquetas y atributos", "Clasificación y estructuración del catálogo", "Normalización de la información de productos", "Adaptación de datos para e-commerce y canales digitales", "Configuración de campos específicos según el ERP", "Revisión y control de la información cargada"] },
       "marketing-digital": { name: "Marketing digital", items: ["Manejo de redes sociales", "Diseño de gráficas y videos", "Generación de leads automatizando LinkedIn"] },
@@ -279,7 +280,7 @@
     var tools = [
       {
         name: "listar_servicios",
-        description: "Lista los servicios de Wargo Studio (agencia de transformación digital) con sus prestaciones. Sin parámetros devuelve las cuatro áreas.",
+        description: "Lista los servicios de Wargo Studio (agencia de transformación digital) con sus prestaciones. Sin parámetros devuelve las cinco áreas.",
         inputSchema: {
           type: "object",
           properties: { area: { type: "string", enum: Object.keys(SERVICES), description: "Área opcional para ver solo una." } }

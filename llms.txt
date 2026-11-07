@@ -1,6 +1,6 @@
 # Wargo Studio
 
-> Agencia de transformación digital. Acompaña a empresas en la implementación de tecnología y la mejora de procesos: diseño gráfico, marketing digital, diseño y desarrollo web, y gestión de productos en ERP. 9 años de experiencia y más de 180 proyectos creados.
+> Agencia de transformación digital. Acompaña a empresas en la implementación de tecnología y la mejora de procesos: diseño gráfico, marketing digital, diseño y desarrollo web, desarrollo de software a medida y gestión de productos en ERP. 9 años de experiencia y más de 180 proyectos creados.
 
 ## Páginas
 
@@ -13,6 +13,7 @@
 ## Servicios
 
 - Diseño y desarrollo web: landing pages, páginas web, e-commerce, posicionamiento SEO, emails institucionales, Google Workspace, hosting, mantenimiento y soporte.
+- Desarrollo de aplicaciones y software a medida: ERP básicos, software de gestión de tareas, portales de clientes y soluciones a medida.
 - Personalización y gestión de productos en ERP: carga y actualización de productos, imágenes, descripciones, categorías, atributos, normalización de datos y adaptación para e-commerce.
 - Marketing digital: manejo de redes sociales, diseño de gráficas y videos, generación de leads automatizando LinkedIn.
 - Diseño gráfico: brochures, catálogos, tarjetas personales, diseño editorial.

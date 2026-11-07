@@ -83,13 +83,13 @@
     Header always append Vary "Accept"
   </FilesMatch>
   <Files "index.md">
-    Header set x-markdown-tokens "1053"
+    Header set x-markdown-tokens "1082"
   </Files>
   <Files "nosotros.md">
     Header set x-markdown-tokens "803"
   </Files>
   <Files "servicios.md">
-    Header set x-markdown-tokens "615"
+    Header set x-markdown-tokens "692"
   </Files>
   <Files "testimonios.md">
     Header set x-markdown-tokens "469"

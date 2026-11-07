@@ -28,13 +28,17 @@ No solo se trata de ideas: se trata de hacerlas funcionar. Desde el desarrollo d
 
 Qué hacemos
 
-## Cuatro áreas, un mismo equipo.
+## Cinco áreas, un mismo equipo.
 
 Cada servicio se piensa en conjunto con los demás, para que marca, presencia digital y operación avancen al mismo ritmo.
 
 ### Diseño y desarrollo web
 
 Sitios, e-commerce, SEO, email institucional y soporte continuo.
+
+### Desarrollo de software a medida
+
+ERP básicos, gestores de tareas, portales de clientes y soluciones a tu medida.
 
 ### Gestión de productos en ERP
 
@@ -102,7 +106,7 @@ años de experiencia
 
 proyectos creados
 
-4
+5
 
 áreas de servicio integradas
 
