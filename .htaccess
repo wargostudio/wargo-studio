@@ -86,7 +86,7 @@
     Header set x-markdown-tokens "1134"
   </Files>
   <Files "nosotros.md">
-    Header set x-markdown-tokens "908"
+    Header set x-markdown-tokens "879"
   </Files>
   <Files "servicios.md">
     Header set x-markdown-tokens "692"

@@ -46,7 +46,7 @@ Trabajamos como una extensión de tu equipo. La transformación digital se sosti
 
 Palabras del fundador
 
-Cuando fundé Wargo Studio lo hice con una convicción: la transformación digital debía ser algo más que una tendencia; debía convertirse en una herramienta de cambio real para las empresas. Hoy trabajamos para que cada cliente pueda crecer, comunicarse mejor y operar de forma más eficiente, uniendo creatividad, estrategia y tecnología en servicios que abarcan branding, diseño, marketing digital, desarrollo web y soluciones empresariales con Google. Cada proyecto es una alianza, y cada resultado, una prueba de que el diseño y la tecnología pueden transformar negocios.
+Cuando fundé Wargo Studio lo hice con una convicción: la transformación digital debía ser algo más que una tendencia; debía convertirse en una herramienta de cambio real para las empresas. Hoy trabajamos para que cada cliente pueda crecer, comunicarse mejor y operar de forma más eficiente, uniendo creatividad, estrategia y tecnología. Cada proyecto es una alianza, y cada resultado, una prueba de que el diseño y la tecnología pueden transformar negocios.
 
 Juan Andrés Cattaneo
 
