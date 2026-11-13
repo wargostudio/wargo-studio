@@ -506,6 +506,29 @@ em { font-style: normal; color: var(--blue); }
 .whatsapp-float svg { width: 27px; height: 27px; fill: #25D366; }
 @media (min-width: 720px) { .whatsapp-float { right: 24px; bottom: 24px; width: 62px; height: 62px; } .whatsapp-float svg { width: 30px; height: 30px; } }
 
+
+/* --- Wargo Academy duo (nosotros) --- */
+.duo-grid { position: relative; display: grid; gap: 1.4rem; margin-top: clamp(2rem, 4vw, 3rem); }
+.duo-card { display: flex; flex-direction: column; align-items: flex-start; gap: .2rem; padding: clamp(1.8rem, 3vw, 2.4rem); }
+.duo-card h3 { margin-top: .4rem; }
+.duo-card p { margin-top: .6rem; color: var(--ink-mute); max-width: 44ch; }
+.duo-card .btn { margin-top: 1.6rem; }
+.duo-card .icon-tile { margin-bottom: .8rem; }
+.duo-logo { height: 52px; width: auto; margin-bottom: .8rem; }
+.duo-tag { font-family: var(--mono); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 1rem; padding: .35rem .8rem; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--line-strong); }
+.duo-tag.is-here { color: var(--blue-dark); background: rgba(37,129,196,.08); box-shadow: none; }
+.duo-card.is-link { box-shadow: inset 0 0 0 1.5px rgba(37,129,196,.35), 0 24px 50px -30px rgba(37,129,196,.35); }
+.duo-bridge { display: none; }
+@media (min-width: 960px) {
+  .duo-grid { grid-template-columns: 1fr 1fr; gap: 2.4rem; }
+  .duo-bridge { display: grid; place-items: center; position: absolute; left: 50%; top: 50%; width: 56px; height: 56px; transform: translate(-50%, -50%); border-radius: 50%; background: var(--surface); box-shadow: inset 0 0 0 1px var(--line-strong), 0 10px 24px -12px rgba(10,10,10,.25); z-index: 2; }
+}
+
+/* --- Wargo Academy footer link --- */
+.footer-ecosystem { margin-top: 1.4rem; font-size: .88rem; color: rgba(243,244,246,.6); }
+.footer-ecosystem a { color: var(--cream); font-weight: 600; border-bottom: 1px solid rgba(243,244,246,.35); transition: color .3s, border-color .3s; }
+.footer-ecosystem a:hover { color: var(--blue-light); border-color: var(--blue-light); }
+
 /* =============================================================
    7. Effects
    ============================================================= */

@@ -52,6 +52,20 @@ Juan Andrés Cattaneo
 
 CEO de Wargo Studio
 
+Ecosistema Wargo
+
+## Dos propuestas, un mismo ecosistema.
+
+### Wargo Studio — para empresas
+
+Transformación digital: desarrollo web y de software a medida, gestión de ERP, marketing digital y diseño gráfico.
+
+### Wargo Academy — para emprendedores
+
+Recomendamos aplicaciones y herramientas para emprendedores a través de videos, posts de blog y charlas presenciales.
+
+[Conocer Wargo Academy](https://wargoacademy.com/)
+
 Trabajemos juntos
 
 ## ¿Listo para conocer cómo podemos ayudarte?
