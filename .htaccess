@@ -12,6 +12,8 @@
 #
 # Doesn't work on Nginx VPS — those need server-level config.
 
+ErrorDocument 404 /404.html
+
 # ----- Cache duration -----
 <IfModule mod_expires.c>
   ExpiresActive On
@@ -94,6 +96,21 @@
   <Files "testimonios.md">
     Header set x-markdown-tokens "469"
   </Files>
+  <Files "desarrollo-web.md">
+    Header set x-markdown-tokens "591"
+  </Files>
+  <Files "desarrollo-software.md">
+    Header set x-markdown-tokens "496"
+  </Files>
+  <Files "gestion-erp.md">
+    Header set x-markdown-tokens "660"
+  </Files>
+  <Files "marketing-digital.md">
+    Header set x-markdown-tokens "446"
+  </Files>
+  <Files "diseno-grafico.md">
+    Header set x-markdown-tokens "422"
+  </Files>
   <Files "contacto.md">
     Header set x-markdown-tokens "272"
   </Files>
@@ -117,6 +134,7 @@
 </IfModule>
 
 AddType text/markdown .md
+AddType application/manifest+json .webmanifest
 AddCharset UTF-8 .md
 
 # ----- Markdown content negotiation (browsers keep getting HTML) -----
@@ -125,7 +143,7 @@ AddCharset UTF-8 .md
   RewriteCond %{HTTP:Accept} text/markdown [NC]
   RewriteRule ^(index\.html)?$ md/index.md [L]
   RewriteCond %{HTTP:Accept} text/markdown [NC]
-  RewriteRule ^(nosotros|servicios|testimonios|contacto)\.html$ md/$1.md [L]
+  RewriteRule ^(nosotros|servicios|testimonios|contacto|desarrollo-web|desarrollo-software|gestion-erp|marketing-digital|diseno-grafico)\.html$ md/$1.md [L]
 </IfModule>
 
 # ----- Gzip compression for text assets -----

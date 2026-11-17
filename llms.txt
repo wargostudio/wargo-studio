@@ -10,6 +10,14 @@
 - [Testimonios](https://www.wargostudio.com/testimonios.html): videos de clientes.
 - [Contacto](https://www.wargostudio.com/contacto.html): email, teléfono, redes y WhatsApp.
 
+## Páginas de servicios
+
+- [Diseño y desarrollo web](https://www.wargostudio.com/desarrollo-web.html): Sitios y sistemas construidos para posicionar, convertir y sostenerse en el tiempo, con mantenimiento y soporte continuo.
+- [Desarrollo de software](https://www.wargostudio.com/desarrollo-software.html): Aplicaciones y sistemas pensados para cómo trabaja tu empresa: desde un ERP básico hasta un portal para tus clientes.
+- [Gestión de productos ERP](https://www.wargostudio.com/gestion-erp.html): Ordenamos, optimizamos y gestionamos catálogos extensos dentro de tu sistema ERP, para que cada producto esté completo, correcto y listo para vender.
+- [Marketing digital](https://www.wargostudio.com/marketing-digital.html): Presencia constante en tus canales y prospección activa para generar oportunidades de negocio reales.
+- [Diseño gráfico](https://www.wargostudio.com/diseno-grafico.html): Piezas de comunicación consistentes con tu identidad, pensadas para cada punto de contacto físico y digital de tu marca.
+
 ## Servicios
 
 - Diseño y desarrollo web: landing pages, páginas web, e-commerce, posicionamiento SEO, emails institucionales, Google Workspace, hosting, mantenimiento y soporte.

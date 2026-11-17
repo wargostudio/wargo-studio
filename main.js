@@ -28,7 +28,7 @@
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
 
-    var path = (location.pathname.split("/").pop() || "index.html");
+    var path = document.body.getAttribute("data-nav") || (location.pathname.split("/").pop() || "index.html");
     $$(".nav-link, .nav-mobile-link").forEach(function (a) {
       var href = a.getAttribute("href");
       if (href === path || (path === "" && href === "index.html")) a.classList.add("is-active");
@@ -171,12 +171,14 @@
       var parts = splitWords(el);
       if (window.gsap && window.ScrollTrigger) {
         gsap.set(parts, { y: 22, opacity: 0 });
+        el.classList.add("is-split");
         gsap.to(parts, {
           y: 0, opacity: 1, duration: 0.85, stagger: 0.035, ease: "expo.out",
           scrollTrigger: { trigger: el, start: "top 92%", once: true }
         });
       } else {
         parts.forEach(function (p) { p.style.opacity = 1; });
+        el.classList.add("is-split");
       }
     });
   }
@@ -219,6 +221,8 @@
     $$("[data-count-to]").forEach(function (el) {
       var target = parseFloat(el.dataset.countTo);
       var obj = { v: 0 };
+      if (window.gsap) el.textContent = "0";
+      el.classList.add("is-ready");
       var trigger = function () {
         if (window.gsap) {
           gsap.to(obj, {
@@ -261,6 +265,212 @@
   }
 
   /* ---------------------------------------------------------
+     Títulos con máscara (sube palabra por palabra)
+  --------------------------------------------------------- */
+  function wrapMaskWords(node, out) {
+    Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+      if (n.nodeType === 3) {
+        var frag = document.createDocumentFragment();
+        n.textContent.split(/(\s+)/).forEach(function (w) {
+          if (!w) return;
+          if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(" ")); return; }
+          var outer = document.createElement("span"); outer.className = "mask-word";
+          var inner = document.createElement("span"); inner.textContent = w;
+          outer.appendChild(inner); frag.appendChild(outer); out.push(inner);
+        });
+        n.parentNode.replaceChild(frag, n);
+      } else if (n.nodeType === 1 && n.nodeName !== "BR") wrapMaskWords(n, out);
+    });
+  }
+  function initMask() {
+    var els = $$("[data-mask]");
+    if (!window.gsap || !window.ScrollTrigger || reduced) {
+      els.forEach(function (el) { el.classList.add("is-split"); });
+      return;
+    }
+    els.forEach(function (el) {
+      var label = el.textContent.trim().replace(/\s+/g, " ");
+      var words = [];
+      wrapMaskWords(el, words);
+      el.setAttribute("aria-label", label);
+      words.forEach(function (w) { w.setAttribute("aria-hidden", "true"); });
+      gsap.set(words, { yPercent: 115 });
+      el.classList.add("is-split");
+      ScrollTrigger.create({
+        trigger: el, start: "top 92%", once: true,
+        onEnter: function () { gsap.to(words, { yPercent: 0, duration: 1.1, ease: "expo.out", stagger: 0.07 }); }
+      });
+    });
+  }
+
+  /* ---------------------------------------------------------
+     Hero: piezas de producto (entrada, flote y parallax al cursor)
+  --------------------------------------------------------- */
+  function initHeroStage() {
+    var stage = $(".hero-stage");
+    if (!stage) return;
+    var cards = $$(".float-card", stage);
+    var glow = $(".stage-glow", stage);
+    if (!window.gsap || !window.ScrollTrigger || reduced) {
+      $$(".fc-in", stage).forEach(function (e) { e.style.opacity = 1; });
+      if (glow) glow.style.opacity = 0.4;
+      return;
+    }
+    if (getComputedStyle(stage).display === "none") return;
+    var floats = [];
+    gsap.fromTo(glow, { scale: 0.85, opacity: 0 }, { scale: 1, opacity: 0.4, duration: 1.6, ease: "power2.out" });
+    cards.forEach(function (card, i) {
+      var inner = $(".fc-in", card);
+      gsap.fromTo(inner, { opacity: 0, y: 46, scale: 0.97 }, {
+        opacity: 1, y: 0, scale: 1, duration: 1.1, ease: "power3.out", delay: 0.35 + i * 0.16,
+        onComplete: function () {
+          floats.push(gsap.to(inner, { y: -9, duration: 3.4 + i * 0.5, ease: "sine.inOut", yoyo: true, repeat: -1 }));
+        }
+      });
+    });
+    gsap.to(glow, { opacity: 0.28, duration: 4.2, ease: "sine.inOut", yoyo: true, repeat: -1, delay: 2 });
+    var hero = stage.closest(".hero");
+    if (fineHover && hero) {
+      var movers = cards.map(function (c) {
+        return { x: gsap.quickTo(c, "x", { duration: 0.9, ease: "power3.out" }), y: gsap.quickTo(c, "y", { duration: 0.9, ease: "power3.out" }), d: parseFloat(c.dataset.depth || 1) };
+      });
+      hero.addEventListener("pointermove", function (e) {
+        var r = hero.getBoundingClientRect();
+        var nx = (e.clientX - r.left) / r.width - 0.5, ny = (e.clientY - r.top) / r.height - 0.5;
+        movers.forEach(function (m) { m.x(-nx * 26 * m.d); m.y(-ny * 18 * m.d); });
+      });
+      hero.addEventListener("pointerleave", function () { movers.forEach(function (m) { m.x(0); m.y(0); }); });
+    }
+    ScrollTrigger.create({
+      trigger: hero, start: "top bottom", end: "bottom top",
+      onToggle: function (s) { floats.forEach(function (t) { if (s.isActive) t.resume(); else t.pause(); }); }
+    });
+  }
+
+  /* ---------------------------------------------------------
+     Tarjetas: luz que sigue al cursor + íconos que se dibujan
+  --------------------------------------------------------- */
+  function initSpotlight() {
+    $$(".services-grid .card, .include-grid .card, .pillars-grid .card").forEach(function (card) {
+      card.classList.add("has-spotlight");
+      $$(".icon-tile svg *", card).forEach(function (el) { if (el.setAttribute) el.setAttribute("pathLength", "1"); });
+      if (!fineHover) return;
+      card.addEventListener("pointermove", function (e) {
+        var r = card.getBoundingClientRect();
+        card.style.setProperty("--mx", (e.clientX - r.left) + "px");
+        card.style.setProperty("--my", (e.clientY - r.top) + "px");
+      });
+    });
+  }
+
+  /* ---------------------------------------------------------
+     Metodología: red que se construye con el scroll
+  --------------------------------------------------------- */
+  function mulberry(a) { return function () { a |= 0; a = (a + 0x6D2B79F5) | 0; var t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
+  function buildNet(svg) {
+    var NS = "http://www.w3.org/2000/svg", rnd = mulberry(11), cx = 300, cy = 300;
+    var rings = [{ n: 4, r: [0, 55] }, { n: 8, r: [105, 145] }, { n: 9, r: [185, 225] }, { n: 8, r: [255, 285] }];
+    var nodes = [];
+    rings.forEach(function (d, g) {
+      for (var i = 0; i < d.n; i++) {
+        var a = (i / d.n) * Math.PI * 2 + rnd() * 0.5 + g * 0.45, r = d.r[0] + (d.r[1] - d.r[0]) * rnd();
+        nodes.push({ x: cx + Math.cos(a) * r, y: cy + Math.sin(a) * r, g: g });
+      }
+    });
+    var seen = {}, edges = [];
+    nodes.forEach(function (n, i) {
+      var near = nodes.map(function (m, j) { return { j: j, d: (m.x - n.x) * (m.x - n.x) + (m.y - n.y) * (m.y - n.y), g: m.g }; })
+        .filter(function (o) { return o.j !== i && o.g <= n.g; }).sort(function (a, b) { return a.d - b.d; }).slice(0, 2);
+      near.forEach(function (o) { var k = Math.min(i, o.j) + "-" + Math.max(i, o.j); if (!seen[k]) { seen[k] = 1; edges.push({ a: i, b: o.j, g: Math.max(n.g, nodes[o.j].g) }); } });
+    });
+    var lineEls = [], nodeEls = [];
+    edges.forEach(function (e) {
+      var A = nodes[e.a], B = nodes[e.b], l = document.createElementNS(NS, "line");
+      l.setAttribute("x1", A.x); l.setAttribute("y1", A.y); l.setAttribute("x2", B.x); l.setAttribute("y2", B.y);
+      l.setAttribute("class", "pn-line" + (e.g === 3 && ((e.a + e.b) % 4 === 0) ? " is-orange" : ""));
+      l.dataset.g = e.g; svg.appendChild(l); lineEls.push(l);
+    });
+    nodes.forEach(function (n, i) {
+      var c = document.createElementNS(NS, "circle"); c.setAttribute("cx", n.x); c.setAttribute("cy", n.y);
+      c.setAttribute("r", n.g === 0 ? 8 : 4.5 + (i % 3));
+      c.setAttribute("class", "pn-node" + (n.g === 0 ? " is-core" : "") + (n.g === 3 && i % 3 === 0 ? " is-orange" : ""));
+      c.dataset.g = n.g; svg.appendChild(c); nodeEls.push(c);
+    });
+    return { lines: lineEls, nodes: nodeEls };
+  }
+  function initStory() {
+    var svg = $(".story-net");
+    if (!svg) return;
+    var net = buildNet(svg);
+    net.lines.forEach(function (l) { var len = l.getTotalLength(); l.style.strokeDasharray = len; l.style.strokeDashoffset = 0; l.dataset.len = len; });
+    var steps = $$(".story-step");
+    if (!window.gsap || !window.ScrollTrigger) { steps.forEach(function (s) { s.classList.add("is-active"); }); return; }
+    steps.forEach(function (s) {
+      ScrollTrigger.create({ trigger: s, start: "top 62%", end: "bottom 62%", onToggle: function (self) { s.classList.toggle("is-active", self.isActive); } });
+    });
+    if (reduced) { steps.forEach(function (s) { s.classList.add("is-active"); }); gsap.set(".story-line-fill", { scaleY: 1 }); return; }
+    var mm = gsap.matchMedia();
+    mm.add("(min-width: 960px)", function () {
+      gsap.set(net.nodes, { opacity: 0, scale: 0, transformOrigin: "50% 50%", transformBox: "fill-box" });
+      net.lines.forEach(function (l) { l.style.strokeDashoffset = l.dataset.len; });
+      var tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+      for (var g = 0; g < 4; g++) {
+        var ns = net.nodes.filter(function (n) { return +n.dataset.g === g; });
+        var ls = net.lines.filter(function (l) { return +l.dataset.g === g; });
+        tl.to(ns, { opacity: 1, scale: 1, duration: 0.6, stagger: 0.07 }, g);
+        tl.to(ls, { strokeDashoffset: 0, duration: 0.9, stagger: 0.05, ease: "power2.out" }, g + 0.2);
+      }
+      ScrollTrigger.create({ trigger: ".story-steps", start: "top 66%", end: "bottom 74%", scrub: 0.8, animation: tl });
+      gsap.to(".story-line-fill", { scaleY: 1, ease: "none", scrollTrigger: { trigger: ".story-steps", start: "top 62%", end: "bottom 62%", scrub: 0.6 } });
+    });
+    mm.add("(max-width: 959px)", function () {
+      gsap.set(".story-line-fill", { scaleY: 1 });
+      gsap.fromTo(net.nodes, { opacity: 0, scale: 0, transformOrigin: "50% 50%", transformBox: "fill-box" }, { opacity: 1, scale: 1, duration: 0.7, stagger: 0.03, ease: "power3.out", scrollTrigger: { trigger: svg, start: "top 80%", once: true } });
+    });
+  }
+
+  /* ---------------------------------------------------------
+     CTA final: glow ambiente
+  --------------------------------------------------------- */
+  function initBloom() {
+    $$(".cta-bloom").forEach(function (g) {
+      if (!window.gsap || !window.ScrollTrigger || reduced) { g.style.opacity = 0.4; return; }
+      gsap.fromTo(g, { opacity: 0, scale: 0.8 }, {
+        opacity: 0.4, scale: 1, duration: 1.8, ease: "power2.out",
+        scrollTrigger: { trigger: g.parentNode, start: "top 75%", once: true },
+        onComplete: function () { gsap.to(g, { opacity: 0.3, scale: 1.04, duration: 4, ease: "sine.inOut", yoyo: true, repeat: -1 }); }
+      });
+    });
+  }
+
+  /* ---------------------------------------------------------
+     Barra de WhatsApp (móvil) y carrusel de testimonios
+  --------------------------------------------------------- */
+  function initWaBar() {
+    var bar = $(".wa-bar");
+    if (!bar) return;
+    var on = function () { bar.classList.toggle("is-visible", scrollY > 420); };
+    on();
+    window.addEventListener("scroll", on, { passive: true });
+  }
+  function initCarousel() {
+    $$("[data-carousel]").forEach(function (wrap) {
+      var track = $(".carousel", wrap), prev = $("[data-dir='-1']", wrap), next = $("[data-dir='1']", wrap);
+      if (!track || !prev || !next) return;
+      var step = function () { var c = track.firstElementChild; return c ? c.getBoundingClientRect().width + 18 : 300; };
+      var update = function () {
+        prev.disabled = track.scrollLeft <= 2;
+        next.disabled = track.scrollLeft >= track.scrollWidth - track.clientWidth - 2;
+      };
+      prev.addEventListener("click", function () { track.scrollBy({ left: -step(), behavior: reduced ? "auto" : "smooth" }); });
+      next.addEventListener("click", function () { track.scrollBy({ left: step(), behavior: reduced ? "auto" : "smooth" }); });
+      track.addEventListener("scroll", update, { passive: true });
+      window.addEventListener("resize", update);
+      update();
+    });
+  }
+
+  /* ---------------------------------------------------------
      WebMCP: expose key site actions as tools for in-browser agents
   --------------------------------------------------------- */
   function initWebMCP() {
@@ -268,11 +478,11 @@
     if (!mc || typeof mc.registerTool !== "function") return;
 
     var SERVICES = {
-      "desarrollo-software": { name: "Desarrollo de aplicaciones y software a medida", items: ["ERP básicos", "Software de gestión de tareas", "Portales de clientes", "Soluciones a medida"] },
-      "diseno-desarrollo-web": { name: "Diseño y desarrollo web", items: ["Landing pages", "Páginas web", "E-commerce", "Posicionamiento SEO", "Emails institucionales", "Google Workspace", "Hosting", "Mantenimiento y soporte"] },
-      "erp": { name: "Personalización y gestión de productos en ERP", items: ["Carga y actualización de productos", "Incorporación y optimización de imágenes", "Redacción y carga de descripciones", "Organización por categorías y rubros", "Configuración de etiquetas y atributos", "Clasificación y estructuración del catálogo", "Normalización de la información de productos", "Adaptación de datos para e-commerce y canales digitales", "Configuración de campos específicos según el ERP", "Revisión y control de la información cargada"] },
-      "marketing-digital": { name: "Marketing digital", items: ["Manejo de redes sociales", "Diseño de gráficas y videos", "Generación de leads automatizando LinkedIn"] },
-      "diseno-grafico": { name: "Diseño gráfico", items: ["Brochures", "Catálogos", "Tarjetas personales", "Diseño editorial"] }
+      "desarrollo-software": { url: "desarrollo-software.html", name: "Desarrollo de aplicaciones y software a medida", items: ["ERP básicos", "Software de gestión de tareas", "Portales de clientes", "Soluciones a medida"] },
+      "diseno-desarrollo-web": { url: "desarrollo-web.html", name: "Diseño y desarrollo web", items: ["Landing pages", "Páginas web", "E-commerce", "Posicionamiento SEO", "Emails institucionales", "Google Workspace", "Hosting", "Mantenimiento y soporte"] },
+      "erp": { url: "gestion-erp.html", name: "Personalización y gestión de productos en ERP", items: ["Carga y actualización de productos", "Incorporación y optimización de imágenes", "Redacción y carga de descripciones", "Organización por categorías y rubros", "Configuración de etiquetas y atributos", "Clasificación y estructuración del catálogo", "Normalización de la información de productos", "Adaptación de datos para e-commerce y canales digitales", "Configuración de campos específicos según el ERP", "Revisión y control de la información cargada"] },
+      "marketing-digital": { url: "marketing-digital.html", name: "Marketing digital", items: ["Manejo de redes sociales", "Diseño de gráficas y videos", "Generación de leads automatizando LinkedIn"] },
+      "diseno-grafico": { url: "diseno-grafico.html", name: "Diseño gráfico", items: ["Brochures", "Catálogos", "Tarjetas personales", "Diseño editorial"] }
     };
     var PAGES = { inicio: "index.html", nosotros: "nosotros.html", servicios: "servicios.html", testimonios: "testimonios.html", contacto: "contacto.html" };
     var text = function (obj) { return { content: [{ type: "text", text: typeof obj === "string" ? obj : JSON.stringify(obj) }] }; };
@@ -338,6 +548,7 @@
      Boot
   --------------------------------------------------------- */
   function boot() {
+    if (window.gsap && window.ScrollTrigger) { try { gsap.registerPlugin(ScrollTrigger); } catch (_e) {} }
     safe(initNav, "initNav");
     safe(initSmoothAnchors, "initSmoothAnchors");
     safe(initScrollProgress, "initScrollProgress");
@@ -347,10 +558,16 @@
     safe(initCountUp, "initCountUp");
     safe(initVideoFacade, "initVideoFacade");
     safe(initWebMCP, "initWebMCP");
+    safe(initMask, "initMask");
+    safe(initSpotlight, "initSpotlight");
+    safe(initCarousel, "initCarousel");
+    safe(initWaBar, "initWaBar");
 
     if (window.gsap && window.ScrollTrigger) {
-      try { gsap.registerPlugin(ScrollTrigger); } catch (_e) {}
       safe(initSplitText, "initSplitText");
+      safe(initHeroStage, "initHeroStage");
+      safe(initStory, "initStory");
+      safe(initBloom, "initBloom");
     }
 
     document.documentElement.classList.add("is-ready");
