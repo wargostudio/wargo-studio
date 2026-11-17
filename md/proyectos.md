@@ -6,7 +6,7 @@ url: https://www.wargostudio.com/proyectos.html
 
 # Proyectos que ya están funcionando
 
-Landing pages, sitios web, identidad visual, software, tableros de datos, catálogos, brochures y trabajos en ERP que desarrollamos para empresas, instituciones y emprendimientos.
+Landing pages, sitios web, identidad visual, software y tableros de datos, catálogos, brochures y trabajos en ERP que desarrollamos para empresas, instituciones y emprendimientos.
 
 ## Landing pages
 
@@ -16,7 +16,7 @@ Landing pages, sitios web, identidad visual, software, tableros de datos, catál
 - [Avícola Alpina](https://avicolaalpina.com.ar/): Landing de la avícola Alpina y Don Giulio: pollos de calidad del campo a la mesa.
 - [Lawgica](https://lawgica.ar/): Estudio de propiedad intelectual que asesora a artistas, creativos y emprendedores.
 
-## Página webs
+## Páginas web
 
 - [Termas del Sol](https://termasdelsol.com.ar/): Sitio web de complejo turístico con presentación del lugar y de sus servicios.
 - [Hostería El Durazno](https://hosteriaeldurazno.com.ar/): Sitio de hostería de montaña con habitaciones, gastronomía y consulta de disponibilidad.
@@ -47,6 +47,7 @@ Landing pages, sitios web, identidad visual, software, tableros de datos, catál
 ## E-commerce
 
 - [Asociación Argentina de Rosicultura](https://rosicultura.com.ar/): Tienda online de la asociación fundada en 1951 por amantes de las rosas, con venta de cursos y publicaciones.
+- [CerroPlast](https://cerroplast.com/): Tienda online de materiales para obra, jardín y hogar, con catálogo de productos, carrito de compras y sucursales.
 
 ## Identidad visual de marca
 
@@ -60,9 +61,6 @@ Landing pages, sitios web, identidad visual, software, tableros de datos, catál
 
 - Tu Radio: Relevamiento e implementación de la plataforma de radio online de Tu Radio, red de radios: reproductor en vivo, programación y panel de control de la emisión.
 - Casa Propiedad Intelectual: Software de gestión a medida para el estudio: seguimiento de marcas y trámites, plazos y vencimientos, novedades por aprobar y notificaciones.
-
-## Tableros de análisis de datos
-
 - Análisis de campañas de marketing: Tablero para Make con prospectos, conexiones, respuestas y tasas de aceptación y de respuesta por campaña, filtrable por perfil, año y trimestre.
 - Strava Metrics: Tablero de análisis de la actividad deportiva a partir del archivo de Strava: resumen, rendimiento, disciplinas y logros.
 
@@ -79,7 +77,7 @@ Landing pages, sitios web, identidad visual, software, tableros de datos, catál
 
 ## Modificaciones de ERP
 
-- Cerroplast: Carga y organización de productos en el ERP: variantes, códigos, imágenes, precios y existencias, con los productos publicados para la venta.
+- CerroPlast: Carga y organización de productos en el ERP: variantes, códigos, imágenes, precios y existencias, con los productos publicados para la venta.
 - Huerta y Cía: Catálogo de productos del ERP publicado en la tienda online de materiales de construcción: códigos, marcas, más vendidos y recomendados.
 
 Wargo Studio · info@wargostudio.com · +54 9 3518 19-3172 · [WhatsApp](https://wa.me/5493518193172)
