@@ -46,7 +46,7 @@ Carga, orden y optimización de catálogos extensos dentro de tu sistema.
 
 ### Marketing digital
 
-Redes sociales, contenido y generación de leads automatizando LinkedIn.
+Redes sociales, contenido, Google Ads y generación de leads automatizando LinkedIn.
 
 ### Diseño gráfico
 

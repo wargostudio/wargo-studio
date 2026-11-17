@@ -57,6 +57,7 @@ Ordenamos, optimizamos y gestionamos catálogos extensos dentro de tu sistema ER
 Presencia constante en tus canales y prospección activa para generar oportunidades de negocio reales.
 - Manejo de redes sociales
 - Diseño de gráficas y videos
+- Campañas en Google Ads
 - Generación de leads automatizando LinkedIn
 
 05 / 05

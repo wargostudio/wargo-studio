@@ -446,6 +446,18 @@
   /* ---------------------------------------------------------
      Barra de WhatsApp (móvil) y carrusel de testimonios
   --------------------------------------------------------- */
+  function initProjects() {
+    var wrap = $("[data-projects]");
+    if (!wrap) return;
+    var btns = $$(".proj-filter", wrap), cards = $$(".proj-card", wrap);
+    btns.forEach(function (b) {
+      b.addEventListener("click", function () {
+        var f = b.getAttribute("data-filter");
+        btns.forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+        cards.forEach(function (c) { c.hidden = !(f === "all" || c.getAttribute("data-cat") === f); });
+      });
+    });
+  }
   function initWaBar() {
     var bar = $(".wa-bar");
     if (!bar) return;
@@ -481,10 +493,10 @@
       "desarrollo-software": { url: "desarrollo-software.html", name: "Desarrollo de aplicaciones y software a medida", items: ["ERP básicos", "Software de gestión de tareas", "Portales de clientes", "Soluciones a medida"] },
       "diseno-desarrollo-web": { url: "desarrollo-web.html", name: "Diseño y desarrollo web", items: ["Landing pages", "Páginas web", "E-commerce", "Posicionamiento SEO", "Emails institucionales", "Google Workspace", "Hosting", "Mantenimiento y soporte"] },
       "erp": { url: "gestion-erp.html", name: "Personalización y gestión de productos en ERP", items: ["Carga y actualización de productos", "Incorporación y optimización de imágenes", "Redacción y carga de descripciones", "Organización por categorías y rubros", "Configuración de etiquetas y atributos", "Clasificación y estructuración del catálogo", "Normalización de la información de productos", "Adaptación de datos para e-commerce y canales digitales", "Configuración de campos específicos según el ERP", "Revisión y control de la información cargada"] },
-      "marketing-digital": { url: "marketing-digital.html", name: "Marketing digital", items: ["Manejo de redes sociales", "Diseño de gráficas y videos", "Generación de leads automatizando LinkedIn"] },
+      "marketing-digital": { url: "marketing-digital.html", name: "Marketing digital", items: ["Manejo de redes sociales", "Diseño de gráficas y videos", "Campañas en Google Ads", "Generación de leads automatizando LinkedIn"] },
       "diseno-grafico": { url: "diseno-grafico.html", name: "Diseño gráfico", items: ["Brochures", "Catálogos", "Tarjetas personales", "Diseño editorial"] }
     };
-    var PAGES = { inicio: "index.html", nosotros: "nosotros.html", servicios: "servicios.html", testimonios: "testimonios.html", contacto: "contacto.html" };
+    var PAGES = { inicio: "index.html", nosotros: "nosotros.html", servicios: "servicios.html", proyectos: "proyectos.html", testimonios: "testimonios.html", contacto: "contacto.html" };
     var text = function (obj) { return { content: [{ type: "text", text: typeof obj === "string" ? obj : JSON.stringify(obj) }] }; };
 
     var tools = [
@@ -561,6 +573,7 @@
     safe(initMask, "initMask");
     safe(initSpotlight, "initSpotlight");
     safe(initCarousel, "initCarousel");
+    safe(initProjects, "initProjects");
     safe(initWaBar, "initWaBar");
 
     if (window.gsap && window.ScrollTrigger) {

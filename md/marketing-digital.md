@@ -1,6 +1,6 @@
 ---
 title: Marketing digital para empresas | Wargo Studio
-description: Manejo de redes sociales, gráficas y videos, y generación de leads automatizando LinkedIn. Marketing digital para empresas en Wargo Studio.
+description: Manejo de redes sociales, gráficas y videos, campañas en Google Ads y generación de leads automatizando LinkedIn. Marketing digital para empresas en Wargo Studio.
 url: https://www.wargostudio.com/marketing-digital.html
 ---
 
@@ -16,6 +16,7 @@ Presencia constante en tus canales y prospección activa para generar oportunida
 
 - **Manejo de redes sociales**: Gestión de la presencia de tu empresa en redes.
 - **Diseño de gráficas y videos**: Piezas visuales para tus publicaciones y campañas.
+- **Campañas en Google Ads**: Anuncios en el buscador de Google para que te encuentren cuando buscan lo que ofrecés.
 - **Generación de leads automatizando LinkedIn**: Prospección automatizada para generar contactos comerciales.
 
 ## Preguntas frecuentes
@@ -23,6 +24,10 @@ Presencia constante en tus canales y prospección activa para generar oportunida
 ### ¿Qué incluye el manejo de redes sociales?
 
 La gestión de la presencia de tu empresa en redes, junto con el diseño de las gráficas y videos que se publican.
+
+### ¿Qué incluye el servicio de Google Ads?
+
+Armamos y gestionamos tus campañas en Google Ads: definición de palabras clave y anuncios, seguimiento de resultados y optimización continua.
 
 ### ¿Cómo funciona la generación de leads en LinkedIn?
 

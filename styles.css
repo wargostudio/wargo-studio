@@ -766,3 +766,52 @@ em { font-style: normal; color: var(--blue); }
   .wa-bar svg { width: 22px; height: 22px; fill: #25D366; flex: none; }
   body { padding-bottom: 5rem; }
 }
+
+/* =============================================================
+   Proyectos (portfolio)
+   ============================================================= */
+.proj-filters { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 2.2rem; }
+.proj-filter {
+  appearance: none; border: 0; cursor: pointer; font: inherit; font-family: var(--display); font-weight: 700; font-size: .88rem;
+  padding: .7rem 1.15rem; border-radius: 999px; background: var(--surface); color: var(--ink-soft);
+  box-shadow: inset 0 0 0 1px var(--line-strong); transition: background .3s var(--ease-out), color .3s var(--ease-out), box-shadow .3s var(--ease-out);
+}
+.proj-filter span { font-family: var(--mono); font-weight: 500; font-size: .72rem; margin-left: .45rem; opacity: .6; }
+.proj-filter:hover { box-shadow: inset 0 0 0 1px var(--blue); color: var(--blue-dark); }
+.proj-filter[aria-pressed="true"] { background: var(--ink); color: #fff; box-shadow: none; }
+.proj-filter:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+
+.proj-grid { display: grid; gap: 1.6rem; grid-template-columns: 1fr; }
+.proj-card {
+  position: relative; display: flex; flex-direction: column; background: var(--surface); border-radius: 22px; overflow: hidden;
+  box-shadow: inset 0 0 0 1px var(--line); color: inherit; text-decoration: none;
+  transition: transform .5s var(--ease-soft), box-shadow .5s var(--ease-soft);
+}
+.proj-card:hover, .proj-card:focus-visible {
+  transform: translateY(-6px);
+  box-shadow: inset 0 0 0 1px var(--line-strong), 0 30px 60px -24px rgba(10,10,10,.22), 0 10px 24px -14px rgba(37,129,196,.28);
+}
+.proj-card:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+.proj-shot { position: relative; background: var(--bg-alt); border-bottom: 1px solid var(--line); }
+.proj-bar { display: flex; align-items: center; gap: .35rem; padding: .6rem .8rem; background: var(--surface); border-bottom: 1px solid var(--line); }
+.proj-bar i { width: 8px; height: 8px; border-radius: 50%; background: var(--line-strong); }
+.proj-bar b { flex: 1; margin-left: .5rem; padding: .22rem .7rem; border-radius: 999px; background: var(--bg); font: 500 .68rem var(--mono); color: var(--ink-mute); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.proj-frame { aspect-ratio: 16 / 10; overflow: hidden; background: var(--bg-alt); }
+.proj-frame img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; transition: transform .9s var(--ease-out); }
+.proj-card:hover .proj-frame img { transform: scale(1.05); }
+.proj-body { display: flex; flex-direction: column; gap: .5rem; padding: 1.3rem 1.4rem 1.5rem; flex: 1; }
+.proj-tag { align-self: flex-start; font: 500 .68rem var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--blue-dark); background: rgba(37,129,196,.1); padding: .3rem .65rem; border-radius: 999px; }
+.proj-tag.is-web { color: #9A5B06; background: rgba(253,166,52,.18); }
+.proj-tag.is-brand { color: var(--ink-soft); background: var(--bg-alt); }
+.proj-body h3 { font-size: 1.2rem; }
+.proj-body p { color: var(--ink-mute); font-size: .95rem; }
+.proj-link { margin-top: auto; padding-top: .6rem; display: inline-flex; align-items: center; gap: .45rem; font-family: var(--display); font-weight: 700; font-size: .88rem; color: var(--blue-dark); }
+.proj-link svg { transition: transform .4s var(--ease-out); }
+.proj-card:hover .proj-link svg { transform: translate(3px, -3px); }
+.proj-card[hidden] { display: none; }
+@media (min-width: 700px) { .proj-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1080px) { .proj-grid { grid-template-columns: repeat(3, 1fr); } }
+.proj-tag.is-soft { color: #0F6B4A; background: rgba(22,163,106,.13); }
+.proj-card.is-static { cursor: default; }
+.proj-card.is-static:hover { transform: none; box-shadow: inset 0 0 0 1px var(--line); }
+.proj-card.is-static .proj-frame img { transform: none !important; }

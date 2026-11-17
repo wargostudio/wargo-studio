@@ -7,6 +7,7 @@
 - [Inicio](https://www.wargostudio.com/): presentación de la agencia, servicios, metodología y testimonios destacados.
 - [Nosotros](https://www.wargostudio.com/nosotros.html): enfoque, valores y palabras del fundador, Juan Andrés Cattaneo (CEO).
 - [Servicios](https://www.wargostudio.com/servicios.html): detalle de cada servicio ofrecido.
+- [Proyectos](https://www.wargostudio.com/proyectos.html): landing pages, sitios web e identidad visual realizados para clientes.
 - [Testimonios](https://www.wargostudio.com/testimonios.html): videos de clientes.
 - [Contacto](https://www.wargostudio.com/contacto.html): email, teléfono, redes y WhatsApp.
 
@@ -23,7 +24,7 @@
 - Diseño y desarrollo web: landing pages, páginas web, e-commerce, posicionamiento SEO, emails institucionales, Google Workspace, hosting, mantenimiento y soporte.
 - Desarrollo de aplicaciones y software a medida: ERP básicos, software de gestión de tareas, portales de clientes y soluciones a medida.
 - Personalización y gestión de productos en ERP: carga y actualización de productos, imágenes, descripciones, categorías, atributos, normalización de datos y adaptación para e-commerce.
-- Marketing digital: manejo de redes sociales, diseño de gráficas y videos, generación de leads automatizando LinkedIn.
+- Marketing digital: manejo de redes sociales, diseño de gráficas y videos, campañas en Google Ads, generación de leads automatizando LinkedIn.
 - Diseño gráfico: brochures, catálogos, tarjetas personales, diseño editorial.
 
 ## Ecosistema
