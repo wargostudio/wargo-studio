@@ -13,10 +13,13 @@ Landing pages, sitios web, identidad visual, software y tableros de datos, catá
 ### Landing pages
 
 - [Teblar](https://teblar.com.ar/): Tela de monofilamento para sombra y protección, con cotización directa por WhatsApp.
-- [Fundación CEEA](https://ceea.com.ar/): Landing institucional para presentar quiénes son, qué hacen y sus valores.
-- [Bloquer](https://bloquer.com.ar/): Servicio personalizado de corte láser, plegado CNC y soldaduras, con diseños directo desde fábrica.
-- [Avícola Alpina](https://avicolaalpina.com.ar/): Landing de la avícola Alpina y Don Giulio: pollos de calidad del campo a la mesa.
 - [Lawgica](https://lawgica.ar/): Estudio de propiedad intelectual que asesora a artistas, creativos y emprendedores.
+- [Bloquer](https://bloquer.com.ar/): Servicio personalizado de corte láser, plegado CNC y soldaduras, con diseños directo desde fábrica.
+- [Tu Radio](https://turadiostream.com.ar/): Red de radios con 15 frecuencias en Córdoba y el centro del país, con reproductor online y programación.
+- [Avícola Alpina](https://avicolaalpina.com.ar/): Landing de la avícola Alpina y Don Giulio: pollos de calidad del campo a la mesa.
+- [Estudio Fariña](https://estudiofarina.com.ar/): Sitio del estudio jurídico, con servicios, equipo y contacto.
+- [Fundación CEEA](https://ceea.com.ar/): Landing institucional para presentar quiénes son, qué hacen y sus valores.
+- [Espacio Consultores](https://espacioconsultores.com.ar/): Consultora de especialistas que trabaja junto al cliente, con una metodología en cuatro etapas: apropiación, blue print, construcción y despliegue. Sitio administrado por Wargo Studio.
 
 ### Páginas web
 
@@ -44,17 +47,14 @@ Landing pages, sitios web, identidad visual, software y tableros de datos, catá
 - [SAMIT](https://samit.com.ar/): Maquinaria para la construcción comercializada en todo el país, con equipos, posventa y novedades.
 - [Ulla Ingeniería](https://ullaingenieria.com.ar/): Asesoría experta en proyectos de infraestructura, con un enfoque multidisciplinario en soluciones integrales de ingeniería. Sitio administrado por Wargo Studio.
 - [Agrotec Argentina](https://agrotecargentina.com.ar/): Industria metal-mecánica de Laguna Larga, Córdoba, con 35 años fabricando implementos agrícolas: guadañadoras, extractores y arrancadoras. Sitio administrado por Wargo Studio.
-- [Estudio Fariña](https://estudiofarina.com.ar/): Sitio del estudio jurídico, con servicios, equipo y contacto.
 - [Ferretería y Corralón Enrici](https://ferreteriaenrici.com.ar/): Materiales para la construcción y herramientas, con envíos a todo Córdoba.
 - [Cáceres Ferretería Corralón](https://caceresferreteria.com.ar/): Ferretería y corralón con showroom y logística propia, con más de 18 años de experiencia.
-- [Tu Radio](https://turadiostream.com.ar/): Red de radios con 15 frecuencias en Córdoba y el centro del país, con reproductor online y programación.
 - [Ezeivan](https://ezeivan.com.ar/): Traslados al aeropuerto y transporte privado de pasajeros para empresas, turistas y productoras.
 - [Neos](https://neos.com.ar/): Tecnología con sentido: soluciones digitales que integran y automatizan procesos comerciales para bajar los costos operativos de las empresas.
 - [Conmeca](https://conmeca.com.ar/): Construcciones mecánicas: cintas transportadoras, rodillos, tambores y estructuras, con obras de ingeniería y montaje. Sitio administrado por Wargo Studio.
 - [Familias Formando Familias](https://afff.org.ar/): Sitio de la ONG que apoya a la familia a través de formación y programas, parte de IFFD en Argentina.
 - [Besora Hnos.](https://www.besora.com.ar/): Fabricación de anillos Pall y Raschig, relleno para torres, rodillos para cintas transportadoras y componentes plásticos y metálicos.
 - [Hidraulic Solución](https://hidraulicsolucion.com.ar/): Venta de repuestos y servicios de hidráulica para el sector agrícola: reparación y puesta a punto en tractores, sembradoras y pulverizadores. Sitio administrado por Wargo Studio.
-- [Espacio Consultores](https://espacioconsultores.com.ar/): Consultora de especialistas que trabaja junto al cliente, con una metodología en cuatro etapas: apropiación, blue print, construcción y despliegue. Sitio administrado por Wargo Studio.
 - [Trüben](https://truben.com.ar/): Ingeniería de servicios: mantenimiento y ejecución de obras civiles e industriales de manera rentable y sostenible.
 - [Tanus Jalil](https://tanusjalil.com.ar/): Importadora y comercializadora de productos fruti-hortícolas en Córdoba, con catálogo de productos y proveedores.
 - [Municipalidad de Colazo](https://colazo.org/): Sitio oficial de la municipalidad de Colazo, Río Segundo, Córdoba, con trámites, novedades y noticias.
@@ -62,8 +62,8 @@ Landing pages, sitios web, identidad visual, software y tableros de datos, catá
 
 ### E-commerce
 
-- [Asociación Argentina de Rosicultura](https://rosicultura.com.ar/): Tienda online de la asociación fundada en 1951 por amantes de las rosas, con venta de cursos y publicaciones.
 - [CerroPlast](https://cerroplast.com/): Tienda online de materiales para obra, jardín y hogar, con catálogo de productos, carrito de compras y sucursales.
+- [Asociación Argentina de Rosicultura](https://rosicultura.com.ar/): Tienda online de la asociación fundada en 1951 por amantes de las rosas, con venta de cursos y publicaciones.
 
 ## Software a medida y análisis de datos
 
