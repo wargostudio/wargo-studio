@@ -10,17 +10,6 @@ Landing pages, sitios web, identidad visual, software y tableros de datos, catá
 
 ## Diseño y desarrollo web
 
-### Landing pages
-
-- [Teblar](https://teblar.com.ar/): Tela de monofilamento para sombra y protección, con cotización directa por WhatsApp.
-- [Lawgica](https://lawgica.ar/): Estudio de propiedad intelectual que asesora a artistas, creativos y emprendedores.
-- [Bloquer](https://bloquer.com.ar/): Servicio personalizado de corte láser, plegado CNC y soldaduras, con diseños directo desde fábrica.
-- [Tu Radio](https://turadiostream.com.ar/): Red de radios con 15 frecuencias en Córdoba y el centro del país, con reproductor online y programación.
-- [Avícola Alpina](https://avicolaalpina.com.ar/): Landing de la avícola Alpina y Don Giulio: pollos de calidad del campo a la mesa.
-- [Estudio Fariña](https://estudiofarina.com.ar/): Sitio del estudio jurídico, con servicios, equipo y contacto.
-- [Fundación CEEA](https://ceea.com.ar/): Landing institucional para presentar quiénes son, qué hacen y sus valores.
-- [Espacio Consultores](https://espacioconsultores.com.ar/): Consultora de especialistas que trabaja junto al cliente, con una metodología en cuatro etapas: apropiación, blue print, construcción y despliegue. Sitio administrado por Wargo Studio.
-
 ### Páginas web
 
 - [Enginear](https://enginearcba.com.ar/): Ingeniería forense y patología de la construcción en Córdoba: peritajes, fallas estructurales, tasaciones y cálculo de estructuras, con más de 35 años de trayectoria.
@@ -64,6 +53,17 @@ Landing pages, sitios web, identidad visual, software y tableros de datos, catá
 
 - [CerroPlast](https://cerroplast.com/): Tienda online de materiales para obra, jardín y hogar, con catálogo de productos, carrito de compras y sucursales.
 - [Asociación Argentina de Rosicultura](https://rosicultura.com.ar/): Tienda online de la asociación fundada en 1951 por amantes de las rosas, con venta de cursos y publicaciones.
+
+### Landing pages
+
+- [Teblar](https://teblar.com.ar/): Tela de monofilamento para sombra y protección, con cotización directa por WhatsApp.
+- [Lawgica](https://lawgica.ar/): Estudio de propiedad intelectual que asesora a artistas, creativos y emprendedores.
+- [Bloquer](https://bloquer.com.ar/): Servicio personalizado de corte láser, plegado CNC y soldaduras, con diseños directo desde fábrica.
+- [Tu Radio](https://turadiostream.com.ar/): Red de radios con 15 frecuencias en Córdoba y el centro del país, con reproductor online y programación.
+- [Avícola Alpina](https://avicolaalpina.com.ar/): Landing de la avícola Alpina y Don Giulio: pollos de calidad del campo a la mesa.
+- [Estudio Fariña](https://estudiofarina.com.ar/): Sitio del estudio jurídico, con servicios, equipo y contacto.
+- [Fundación CEEA](https://ceea.com.ar/): Landing institucional para presentar quiénes son, qué hacen y sus valores.
+- [Espacio Consultores](https://espacioconsultores.com.ar/): Consultora de especialistas que trabaja junto al cliente, con una metodología en cuatro etapas: apropiación, blue print, construcción y despliegue. Sitio administrado por Wargo Studio.
 
 ## Software a medida y análisis de datos
 
