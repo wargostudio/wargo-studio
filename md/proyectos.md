@@ -54,6 +54,10 @@ Landing pages, sitios web, identidad visual, software y tableros de datos, catá
 - [Ulla Ingeniería](https://ullaingenieria.com.ar/): Asesoría experta en proyectos de infraestructura, con un enfoque multidisciplinario en soluciones integrales de ingeniería. Sitio administrado por Wargo Studio.
 - [Conmeca](https://conmeca.com.ar/): Construcciones mecánicas: cintas transportadoras, rodillos, tambores y estructuras, con obras de ingeniería y montaje. Sitio administrado por Wargo Studio.
 - [Hidraulic Solución](https://hidraulicsolucion.com.ar/): Venta de repuestos y servicios de hidráulica para el sector agrícola: reparación y puesta a punto en tractores, sembradoras y pulverizadores. Sitio administrado por Wargo Studio.
+- [Besora Hnos.](https://www.besora.com.ar/): Fabricación de anillos Pall y Raschig, relleno para torres, rodillos para cintas transportadoras y componentes plásticos y metálicos.
+- [Neos](https://neos.com.ar/): Tecnología con sentido: soluciones digitales que integran y automatizan procesos comerciales para bajar los costos operativos de las empresas.
+- [Casa Fader Coworking](https://casafadercoworking.com.ar/): Espacios de coworking en Córdoba: oficinas compartidas con servicios incluidos y reserva online del espacio.
+- [Taller de Innovación Social](https://tis.cordobamejora.org/): Programa gratuito de la Fundación Córdoba Mejora que acerca a los jóvenes a la innovación: 8 encuentros, en modalidad remota, presencial o híbrida.
 
 ### E-commerce
 
