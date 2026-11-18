@@ -449,12 +449,25 @@
   function initProjects() {
     var wrap = $("[data-projects]");
     if (!wrap) return;
-    var btns = $$(".proj-filter", wrap), cards = $$(".proj-card", wrap);
-    btns.forEach(function (b) {
-      b.addEventListener("click", function () {
-        var f = b.getAttribute("data-filter");
-        btns.forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
-        cards.forEach(function (c) { c.hidden = !(f === "all" || c.getAttribute("data-cat") === f); });
+    var prim = $$(".proj-filters > .proj-filter", wrap), subs = $$(".proj-subfilters", wrap), cards = $$(".proj-card", wrap);
+    var svc = "all", sub = "all";
+    function apply() {
+      prim.forEach(function (x) { x.setAttribute("aria-pressed", x.getAttribute("data-filter") === svc ? "true" : "false"); });
+      subs.forEach(function (g) {
+        g.hidden = g.getAttribute("data-for") !== svc;
+        $$(".proj-filter", g).forEach(function (x) { x.setAttribute("aria-pressed", x.getAttribute("data-sub") === sub ? "true" : "false"); });
+      });
+      cards.forEach(function (c) {
+        var ok = (svc === "all" || c.getAttribute("data-svc") === svc) && (sub === "all" || c.getAttribute("data-cat") === sub);
+        c.hidden = !ok;
+      });
+    }
+    prim.forEach(function (b) {
+      b.addEventListener("click", function () { svc = b.getAttribute("data-filter"); sub = "all"; apply(); });
+    });
+    subs.forEach(function (g) {
+      $$(".proj-filter", g).forEach(function (b) {
+        b.addEventListener("click", function () { sub = b.getAttribute("data-sub"); apply(); });
       });
     });
   }

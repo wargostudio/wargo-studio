@@ -29,7 +29,7 @@
 <link rel="preload" href="assets/fonts/montserrat-600-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <script>document.documentElement.classList.add('js')</script>
-<link rel="stylesheet" href="styles.css?v=20261117w">
+<link rel="stylesheet" href="styles.css?v=20261117x">
 <noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
 <script type="application/ld+json">
 {
@@ -376,19 +376,27 @@
 
 <section class="section" style="padding-top:0;" data-projects>
   <div class="container">
-    <div class="proj-filters reveal" data-reveal role="group" aria-label="Filtrar proyectos por tipo">
+    <div class="proj-filters reveal" data-reveal role="group" aria-label="Filtrar proyectos por servicio">
       <button type="button" class="proj-filter" data-filter="all" aria-pressed="true">Todos<span>48</span></button>
-      <button type="button" class="proj-filter" data-filter="landing" aria-pressed="false">Landing pages<span>5</span></button>
-      <button type="button" class="proj-filter" data-filter="web" aria-pressed="false">Páginas web<span>25</span></button>
-      <button type="button" class="proj-filter" data-filter="ecommerce" aria-pressed="false">E-commerce<span>2</span></button>
-      <button type="button" class="proj-filter" data-filter="brand" aria-pressed="false">Identidad visual<span>5</span></button>
-      <button type="button" class="proj-filter" data-filter="software" aria-pressed="false">Software<span>4</span></button>
-      <button type="button" class="proj-filter" data-filter="catalogo" aria-pressed="false">Catálogos<span>1</span></button>
-      <button type="button" class="proj-filter" data-filter="brochure" aria-pressed="false">Brochures<span>4</span></button>
-      <button type="button" class="proj-filter" data-filter="erp" aria-pressed="false">Modificaciones de ERP<span>2</span></button>
+      <button type="button" class="proj-filter" data-filter="web" aria-pressed="false">Diseño y desarrollo web<span>32</span></button>
+      <button type="button" class="proj-filter" data-filter="soft" aria-pressed="false">Software a medida<span>4</span></button>
+      <button type="button" class="proj-filter" data-filter="erp" aria-pressed="false">Gestión de ERP<span>2</span></button>
+      <button type="button" class="proj-filter" data-filter="grafico" aria-pressed="false">Diseño gráfico<span>10</span></button>
+    </div>
+    <div class="proj-subfilters" data-for="web" role="group" aria-label="Diseño y desarrollo web: filtrar por tipo" hidden>
+        <button type="button" class="proj-filter is-sub" data-sub="all" aria-pressed="true">Todos<span>32</span></button>
+        <button type="button" class="proj-filter is-sub" data-sub="landing" aria-pressed="false">Landing pages<span>5</span></button>
+        <button type="button" class="proj-filter is-sub" data-sub="web" aria-pressed="false">Páginas web<span>25</span></button>
+        <button type="button" class="proj-filter is-sub" data-sub="ecommerce" aria-pressed="false">E-commerce<span>2</span></button>
+    </div>
+    <div class="proj-subfilters" data-for="grafico" role="group" aria-label="Diseño gráfico: filtrar por tipo" hidden>
+        <button type="button" class="proj-filter is-sub" data-sub="all" aria-pressed="true">Todos<span>10</span></button>
+        <button type="button" class="proj-filter is-sub" data-sub="brand" aria-pressed="false">Identidad visual<span>5</span></button>
+        <button type="button" class="proj-filter is-sub" data-sub="catalogo" aria-pressed="false">Catálogos<span>1</span></button>
+        <button type="button" class="proj-filter is-sub" data-sub="brochure" aria-pressed="false">Brochures<span>4</span></button>
     </div>
     <div class="proj-grid">
-      <a class="proj-card reveal" data-reveal data-cat="landing" href="https://teblar.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Teblar: abrir teblar.com.ar en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="landing" href="https://teblar.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Teblar: abrir teblar.com.ar en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>teblar.com.ar</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/teblar.webp?v=4" alt="Captura del sitio de Teblar" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -400,7 +408,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="landing" href="https://ceea.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Fundación CEEA: abrir ceea.com.ar en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="landing" href="https://ceea.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Fundación CEEA: abrir ceea.com.ar en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>ceea.com.ar</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/ceea.webp?v=4" alt="Captura del sitio de Fundación CEEA" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -412,7 +420,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="landing" href="https://bloquer.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Bloquer: abrir bloquer.com.ar en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="landing" href="https://bloquer.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Bloquer: abrir bloquer.com.ar en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>bloquer.com.ar</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/bloquer.webp?v=4" alt="Captura del sitio de Bloquer" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -424,7 +432,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="landing" href="https://avicolaalpina.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Avícola Alpina: abrir avicolaalpina.com.ar en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="landing" href="https://avicolaalpina.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Avícola Alpina: abrir avicolaalpina.com.ar en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>avicolaalpina.com.ar</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/avicolaalpina.webp?v=4" alt="Captura del sitio de Avícola Alpina" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -436,7 +444,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="landing" href="https://lawgica.ar/" target="_blank" rel="noopener noreferrer" aria-label="Lawgica: abrir lawgica.ar en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="landing" href="https://lawgica.ar/" target="_blank" rel="noopener noreferrer" aria-label="Lawgica: abrir lawgica.ar en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>lawgica.ar</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/lawgica.webp?v=4" alt="Captura del sitio de Lawgica" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -448,7 +456,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="web" href="https://termasdelsol.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Termas del Sol: abrir termasdelsol.com.ar en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="web" href="https://termasdelsol.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Termas del Sol: abrir termasdelsol.com.ar en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>termasdelsol.com.ar</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/termasdelsol.webp?v=4" alt="Captura del sitio de Termas del Sol" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -460,7 +468,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="web" href="https://hosteriaeldurazno.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Hostería El Durazno: abrir hosteriaeldurazno.com.ar en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="web" href="https://hosteriaeldurazno.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Hostería El Durazno: abrir hosteriaeldurazno.com.ar en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>hosteriaeldurazno.com.ar</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/hosteriaeldurazno.webp?v=4" alt="Captura del sitio de Hostería El Durazno" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -472,7 +480,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="web" href="https://cubrirservicios.com/" target="_blank" rel="noopener noreferrer" aria-label="Cubrir Servicios: abrir cubrirservicios.com en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="web" href="https://cubrirservicios.com/" target="_blank" rel="noopener noreferrer" aria-label="Cubrir Servicios: abrir cubrirservicios.com en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>cubrirservicios.com</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/cubrirservicios.webp?v=4" alt="Captura del sitio de Cubrir Servicios" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -484,7 +492,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="web" href="https://romerosrl.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Romero SRL: abrir romerosrl.com.ar en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="web" href="https://romerosrl.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Romero SRL: abrir romerosrl.com.ar en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>romerosrl.com.ar</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/romerosrl.webp?v=4" alt="Captura del sitio de Romero SRL" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -496,7 +504,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="web" href="https://unnivers.org/" target="_blank" rel="noopener noreferrer" aria-label="Unnivers: abrir unnivers.org en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="web" href="https://unnivers.org/" target="_blank" rel="noopener noreferrer" aria-label="Unnivers: abrir unnivers.org en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>unnivers.org</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/unnivers.webp?v=4" alt="Captura del sitio de Unnivers" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -508,7 +516,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="web" href="https://lourdesrugbyclub.com/" target="_blank" rel="noopener noreferrer" aria-label="Lourdes Rugby Club: abrir lourdesrugbyclub.com en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="web" href="https://lourdesrugbyclub.com/" target="_blank" rel="noopener noreferrer" aria-label="Lourdes Rugby Club: abrir lourdesrugbyclub.com en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>lourdesrugbyclub.com</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/lourdesrugbyclub.webp?v=4" alt="Captura del sitio de Lourdes Rugby Club" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -520,7 +528,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="web" href="https://tanusjalil.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Tanus Jalil: abrir tanusjalil.com.ar en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="web" href="https://tanusjalil.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Tanus Jalil: abrir tanusjalil.com.ar en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>tanusjalil.com.ar</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/tanusjalil.webp?v=4" alt="Captura del sitio de Tanus Jalil" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -532,7 +540,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="web" href="https://colazo.org/" target="_blank" rel="noopener noreferrer" aria-label="Municipalidad de Colazo: abrir colazo.org en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="web" href="https://colazo.org/" target="_blank" rel="noopener noreferrer" aria-label="Municipalidad de Colazo: abrir colazo.org en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>colazo.org</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/colazo.webp?v=4" alt="Captura del sitio de Municipalidad de Colazo" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -544,7 +552,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="web" href="https://posadauguay.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Posada Uguay: abrir posadauguay.com.ar en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="web" href="https://posadauguay.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Posada Uguay: abrir posadauguay.com.ar en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>posadauguay.com.ar</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/posadauguay.webp?v=4" alt="Captura del sitio de Posada Uguay" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -556,7 +564,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="web" href="https://afff.org.ar/" target="_blank" rel="noopener noreferrer" aria-label="Familias Formando Familias: abrir afff.org.ar en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="web" href="https://afff.org.ar/" target="_blank" rel="noopener noreferrer" aria-label="Familias Formando Familias: abrir afff.org.ar en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>afff.org.ar</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/afff.webp?v=4" alt="Captura del sitio de Familias Formando Familias" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -568,7 +576,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="web" href="https://kashgrouptraining.com/" target="_blank" rel="noopener noreferrer" aria-label="Kash Group Training: abrir kashgrouptraining.com en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="web" href="https://kashgrouptraining.com/" target="_blank" rel="noopener noreferrer" aria-label="Kash Group Training: abrir kashgrouptraining.com en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>kashgrouptraining.com</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/kashgrouptraining-web.webp?v=4" alt="Captura del sitio de Kash Group Training" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -580,7 +588,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="web" href="https://estructurastr.com/" target="_blank" rel="noopener noreferrer" aria-label="Estructuras TR: abrir estructurastr.com en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="web" href="https://estructurastr.com/" target="_blank" rel="noopener noreferrer" aria-label="Estructuras TR: abrir estructurastr.com en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>estructurastr.com</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/estructurastr.webp?v=4" alt="Captura del sitio de Estructuras TR" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -592,7 +600,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="web" href="https://magicpark.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Magic Play: abrir magicpark.com.ar en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="web" href="https://magicpark.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Magic Play: abrir magicpark.com.ar en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>magicpark.com.ar</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/magicpark.webp?v=4" alt="Captura del sitio de Magic Play" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -604,7 +612,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="web" href="https://bechismetalmecanica.com/" target="_blank" rel="noopener noreferrer" aria-label="Bechis Metalmecánica: abrir bechismetalmecanica.com en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="web" href="https://bechismetalmecanica.com/" target="_blank" rel="noopener noreferrer" aria-label="Bechis Metalmecánica: abrir bechismetalmecanica.com en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>bechismetalmecanica.com</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/bechismetalmecanica.webp?v=4" alt="Captura del sitio de Bechis Metalmecánica" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -616,7 +624,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="web" href="https://apromax.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Apromax: abrir apromax.com.ar en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="web" href="https://apromax.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Apromax: abrir apromax.com.ar en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>apromax.com.ar</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/apromax.webp?v=4" alt="Captura del sitio de Apromax" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -628,7 +636,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="web" href="https://casapi.ar/" target="_blank" rel="noopener noreferrer" aria-label="Casa Propiedad Intelectual: abrir casapi.ar en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="web" href="https://casapi.ar/" target="_blank" rel="noopener noreferrer" aria-label="Casa Propiedad Intelectual: abrir casapi.ar en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>casapi.ar</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/casapi.webp?v=4" alt="Captura del sitio de Casa Propiedad Intelectual" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -640,7 +648,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="web" href="https://turadiostream.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Tu Radio: abrir turadiostream.com.ar en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="web" href="https://turadiostream.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Tu Radio: abrir turadiostream.com.ar en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>turadiostream.com.ar</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/turadiostream.webp?v=4" alt="Captura del sitio de Tu Radio" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -652,7 +660,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="web" href="https://estudiofarina.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Estudio Fariña: abrir estudiofarina.com.ar en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="web" href="https://estudiofarina.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Estudio Fariña: abrir estudiofarina.com.ar en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>estudiofarina.com.ar</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/estudiofarina-web.webp?v=4" alt="Captura del sitio de Estudio Fariña" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -664,7 +672,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="web" href="https://vitalenergy.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Vital Energy: abrir vitalenergy.com.ar en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="web" href="https://vitalenergy.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Vital Energy: abrir vitalenergy.com.ar en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>vitalenergy.com.ar</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/vitalenergy.webp?v=4" alt="Captura del sitio de Vital Energy" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -676,7 +684,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="web" href="https://ezeivan.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Ezeivan: abrir ezeivan.com.ar en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="web" href="https://ezeivan.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Ezeivan: abrir ezeivan.com.ar en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>ezeivan.com.ar</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/ezeivan.webp?v=4" alt="Captura del sitio de Ezeivan" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -688,7 +696,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="web" href="https://ferreteriaenrici.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Ferretería y Corralón Enrici: abrir ferreteriaenrici.com.ar en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="web" href="https://ferreteriaenrici.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Ferretería y Corralón Enrici: abrir ferreteriaenrici.com.ar en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>ferreteriaenrici.com.ar</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/ferreteriaenrici.webp?v=4" alt="Captura del sitio de Ferretería y Corralón Enrici" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -700,7 +708,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="web" href="https://caceresferreteria.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Cáceres Ferretería Corralón: abrir caceresferreteria.com.ar en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="web" href="https://caceresferreteria.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Cáceres Ferretería Corralón: abrir caceresferreteria.com.ar en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>caceresferreteria.com.ar</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/caceresferreteria.webp?v=4" alt="Captura del sitio de Cáceres Ferretería Corralón" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -712,7 +720,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="web" href="https://samit.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="SAMIT: abrir samit.com.ar en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="web" href="https://samit.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="SAMIT: abrir samit.com.ar en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>samit.com.ar</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/samit.webp?v=4" alt="Captura del sitio de SAMIT" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -724,7 +732,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="web" href="https://h2t-ingenieria.com/" target="_blank" rel="noopener noreferrer" aria-label="H2T Proyectos &amp; Ingeniería: abrir h2t-ingenieria.com en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="web" href="https://h2t-ingenieria.com/" target="_blank" rel="noopener noreferrer" aria-label="H2T Proyectos &amp; Ingeniería: abrir h2t-ingenieria.com en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>h2t-ingenieria.com</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/h2t.webp?v=4" alt="Captura del sitio de H2T Proyectos &amp; Ingeniería" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -736,7 +744,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="web" href="https://ypfmaffia.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="YPF Maffía: abrir ypfmaffia.com.ar en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="web" href="https://ypfmaffia.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="YPF Maffía: abrir ypfmaffia.com.ar en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>ypfmaffia.com.ar</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/ypfmaffia.webp?v=4" alt="Captura del sitio de YPF Maffía" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -748,7 +756,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="ecommerce" href="https://rosicultura.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Asociación Argentina de Rosicultura: abrir rosicultura.com.ar en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="ecommerce" href="https://rosicultura.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Asociación Argentina de Rosicultura: abrir rosicultura.com.ar en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>rosicultura.com.ar</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/rosicultura.webp?v=4" alt="Captura del sitio de Asociación Argentina de Rosicultura" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -760,7 +768,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="ecommerce" href="https://cerroplast.com/" target="_blank" rel="noopener noreferrer" aria-label="CerroPlast: abrir cerroplast.com en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="web" data-cat="ecommerce" href="https://cerroplast.com/" target="_blank" rel="noopener noreferrer" aria-label="CerroPlast: abrir cerroplast.com en una pestaña nueva">
         <div class="proj-shot">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><b>cerroplast.com</b></div>
           <div class="proj-frame"><img src="assets/img/proyectos/cerroplast.webp?v=4" alt="Captura del sitio de CerroPlast" width="960" height="600" loading="lazy" decoding="async"></div>
@@ -772,7 +780,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="brand" href="https://kashgrouptraining.com/" target="_blank" rel="noopener noreferrer" aria-label="Kash Group Training: abrir kashgrouptraining.com en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="grafico" data-cat="brand" href="https://kashgrouptraining.com/" target="_blank" rel="noopener noreferrer" aria-label="Kash Group Training: abrir kashgrouptraining.com en una pestaña nueva">
         <div class="proj-shot is-brand">
           <div class="proj-frame"><img src="assets/img/proyectos/kashgrouptraining.webp?v=4" alt="Identidad visual de Kash Group Training: logo, colores y tipografía" width="960" height="600" loading="lazy" decoding="async"></div>
         </div>
@@ -783,7 +791,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="brand" href="https://efuegos.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="E-Fuegos: abrir efuegos.com.ar en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="grafico" data-cat="brand" href="https://efuegos.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="E-Fuegos: abrir efuegos.com.ar en una pestaña nueva">
         <div class="proj-shot is-brand">
           <div class="proj-frame"><img src="assets/img/proyectos/efuegos.webp?v=4" alt="Identidad visual de E-Fuegos: logo, colores y tipografía" width="960" height="600" loading="lazy" decoding="async"></div>
         </div>
@@ -794,7 +802,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="brand" href="https://escuelaspiasdeargentina.com/" target="_blank" rel="noopener noreferrer" aria-label="Escuelas Pías de Argentina: abrir escuelaspiasdeargentina.com en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="grafico" data-cat="brand" href="https://escuelaspiasdeargentina.com/" target="_blank" rel="noopener noreferrer" aria-label="Escuelas Pías de Argentina: abrir escuelaspiasdeargentina.com en una pestaña nueva">
         <div class="proj-shot is-brand">
           <div class="proj-frame"><img src="assets/img/proyectos/escuelaspiasdeargentina.webp?v=4" alt="Identidad visual de Escuelas Pías de Argentina: logo, colores y tipografía" width="960" height="600" loading="lazy" decoding="async"></div>
         </div>
@@ -805,7 +813,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="brand" href="https://servteching.com/" target="_blank" rel="noopener noreferrer" aria-label="Servteching: abrir servteching.com en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="grafico" data-cat="brand" href="https://servteching.com/" target="_blank" rel="noopener noreferrer" aria-label="Servteching: abrir servteching.com en una pestaña nueva">
         <div class="proj-shot is-brand">
           <div class="proj-frame"><img src="assets/img/proyectos/servteching.webp?v=4" alt="Identidad visual de Servteching: logo, colores y tipografía" width="960" height="600" loading="lazy" decoding="async"></div>
         </div>
@@ -816,7 +824,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <a class="proj-card reveal" data-reveal data-cat="brand" href="https://estudiofarina.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Estudio Fariña: abrir estudiofarina.com.ar en una pestaña nueva">
+      <a class="proj-card reveal" data-reveal data-svc="grafico" data-cat="brand" href="https://estudiofarina.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Estudio Fariña: abrir estudiofarina.com.ar en una pestaña nueva">
         <div class="proj-shot is-brand">
           <div class="proj-frame"><img src="assets/img/proyectos/estudiofarina.webp?v=4" alt="Identidad visual de Estudio Fariña: logo, colores y tipografía" width="960" height="600" loading="lazy" decoding="async"></div>
         </div>
@@ -827,7 +835,7 @@
           <span class="proj-link">Ver sitio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <article class="proj-card is-static reveal" data-reveal data-cat="software">
+      <article class="proj-card is-static reveal" data-reveal data-svc="soft" data-cat="software">
         <div class="proj-shot is-brand">
           <div class="proj-frame"><img src="assets/img/proyectos/turadio.webp?v=4" alt="Tu Radio: sitio, reproductor y panel de control de la plataforma de radio online" width="960" height="600" loading="lazy" decoding="async"></div>
         </div>
@@ -837,7 +845,7 @@
           <p>Relevamiento e implementación de la plataforma de radio online de Tu Radio, red de radios: reproductor en vivo, programación y panel de control de la emisión.</p>
         </div>
       </article>
-      <article class="proj-card is-static reveal" data-reveal data-cat="software">
+      <article class="proj-card is-static reveal" data-reveal data-svc="soft" data-cat="software">
         <div class="proj-shot is-brand">
           <div class="proj-frame"><img src="assets/img/proyectos/casapi-manager.webp?v=4" alt="Casa Propiedad Intelectual: software de gestión interna con resumen de plazos, marcas y trámites" width="960" height="600" loading="lazy" decoding="async"></div>
         </div>
@@ -847,7 +855,7 @@
           <p>Software de gestión a medida para el estudio: seguimiento de marcas y trámites, plazos y vencimientos, novedades por aprobar y notificaciones.</p>
         </div>
       </article>
-      <article class="proj-card is-static reveal" data-reveal data-cat="software">
+      <article class="proj-card is-static reveal" data-reveal data-svc="soft" data-cat="software">
         <div class="proj-shot is-brand">
           <div class="proj-frame"><img src="assets/img/proyectos/campanas-make.webp?v=4" alt="Tablero de análisis de campañas de marketing con indicadores y tasa de aceptación por campaña" width="960" height="600" loading="lazy" decoding="async"></div>
         </div>
@@ -857,7 +865,7 @@
           <p>Tablero para Make con prospectos, conexiones, respuestas y tasas de aceptación y de respuesta por campaña, filtrable por perfil, año y trimestre.</p>
         </div>
       </article>
-      <article class="proj-card is-static reveal" data-reveal data-cat="software">
+      <article class="proj-card is-static reveal" data-reveal data-svc="soft" data-cat="software">
         <div class="proj-shot is-brand">
           <div class="proj-frame"><img src="assets/img/proyectos/strava-metrics.webp?v=4" alt="Strava Metrics: tablero de análisis de actividad deportiva con resumen, disciplinas e indicadores" width="960" height="600" loading="lazy" decoding="async"></div>
         </div>
@@ -867,7 +875,7 @@
           <p>Tablero de análisis de la actividad deportiva a partir del archivo de Strava: resumen, rendimiento, disciplinas y logros.</p>
         </div>
       </article>
-      <article class="proj-card is-static reveal" data-reveal data-cat="catalogo">
+      <article class="proj-card is-static reveal" data-reveal data-svc="grafico" data-cat="catalogo">
         <div class="proj-shot is-brand">
           <div class="proj-frame"><img src="assets/img/proyectos/estructurastr-catalogos.webp?v=4" alt="Estructuras TR: catálogos de producto de estructuras de acero, torres elevadoras y estructuras de aluminio" width="960" height="600" loading="lazy" decoding="async"></div>
         </div>
@@ -877,7 +885,7 @@
           <p>Catálogos de producto en formato A4: estructuras de acero, torres elevadoras y estructuras de aluminio, con la identidad de la marca.</p>
         </div>
       </article>
-      <article class="proj-card is-static reveal" data-reveal data-cat="brochure">
+      <article class="proj-card is-static reveal" data-reveal data-svc="grafico" data-cat="brochure">
         <div class="proj-shot is-brand">
           <div class="proj-frame"><img src="assets/img/proyectos/unnivers-brochure.webp?v=4" alt="Brochure de Unnivers: World Class Education, Innovate. Transform. Elevate." width="960" height="600" loading="lazy" decoding="async"></div>
         </div>
@@ -887,7 +895,7 @@
           <p>Brochure institucional en inglés con el posicionamiento de la marca: World Class Education, con el mensaje Innovate. Transform. Elevate.</p>
         </div>
       </article>
-      <article class="proj-card is-static reveal" data-reveal data-cat="brochure">
+      <article class="proj-card is-static reveal" data-reveal data-svc="grafico" data-cat="brochure">
         <div class="proj-shot is-brand">
           <div class="proj-frame"><img src="assets/img/proyectos/ezeivan-brochure.webp?v=4" alt="Brochure de Ezeivan Group Transport: transporte privado de pasajeros con flota ejecutiva, premium y de lujo" width="960" height="600" loading="lazy" decoding="async"></div>
         </div>
@@ -897,7 +905,7 @@
           <p>Brochure en inglés de traslados privados de pasajeros: flota ejecutiva, premium y de lujo, traslados a aeropuertos y apoyo a aviación privada.</p>
         </div>
       </article>
-      <article class="proj-card is-static reveal" data-reveal data-cat="brochure">
+      <article class="proj-card is-static reveal" data-reveal data-svc="grafico" data-cat="brochure">
         <div class="proj-shot is-brand">
           <div class="proj-frame"><img src="assets/img/proyectos/magicplay-brochure.webp?v=4" alt="Pieza gráfica vertical de Magic Play: diversión para toda la familia" width="960" height="600" loading="lazy" decoding="async"></div>
         </div>
@@ -907,7 +915,7 @@
           <p>Pieza gráfica vertical para la plaza de juegos, con el mensaje Diversión para toda la familia.</p>
         </div>
       </article>
-      <article class="proj-card is-static reveal" data-reveal data-cat="brochure">
+      <article class="proj-card is-static reveal" data-reveal data-svc="grafico" data-cat="brochure">
         <div class="proj-shot is-brand">
           <div class="proj-frame"><img src="assets/img/proyectos/turadio-brochure.webp?v=4" alt="Portada de la propuesta comercial 2025 de Tu Radio, red de radios" width="960" height="600" loading="lazy" decoding="async"></div>
         </div>
@@ -917,7 +925,7 @@
           <p>Portada de la propuesta comercial 2025 de la red de radios, con la identidad de marca.</p>
         </div>
       </article>
-      <article class="proj-card is-static reveal" data-reveal data-cat="erp">
+      <article class="proj-card is-static reveal" data-reveal data-svc="erp" data-cat="erp">
         <div class="proj-shot is-brand">
           <div class="proj-frame"><img src="assets/img/proyectos/cerroplast-erp.webp?v=4" alt="CerroPlast: listado de productos con variantes, códigos y existencias cargados en el ERP" width="960" height="600" loading="lazy" decoding="async"></div>
         </div>
@@ -927,7 +935,7 @@
           <p>Carga y organización de productos en el ERP: variantes, códigos, imágenes, precios y existencias, con los productos publicados para la venta.</p>
         </div>
       </article>
-      <article class="proj-card is-static reveal" data-reveal data-cat="erp">
+      <article class="proj-card is-static reveal" data-reveal data-svc="erp" data-cat="erp">
         <div class="proj-shot is-brand">
           <div class="proj-frame"><img src="assets/img/proyectos/huertaycia-erp.webp?v=4" alt="Huerta y Cía: tienda online de materiales de construcción con el catálogo del ERP" width="960" height="600" loading="lazy" decoding="async"></div>
         </div>
@@ -1038,7 +1046,7 @@
 <a class="wa-bar" href="https://wa.me/5493518193172?text=Hola%21%20Te%20escribo%20desde%20la%20p%C3%A1gina%20web%20de%20Wargo.%20Necesito..." target="_blank" rel="noopener"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.4.66 4.64 1.8 6.56L4 29l7.6-1.72c1.84.98 3.94 1.54 6.4 1.54 6.62 0 12.02-5.4 12.02-12.02C30.02 8.4 24.64 3 16.02 3zm7.06 17.06c-.3.84-1.5 1.56-2.44 1.76-.66.14-1.5.24-4.4-.94-3.7-1.52-6.08-5.28-6.26-5.52-.18-.24-1.5-2-1.5-3.82 0-1.82.94-2.7 1.28-3.08.34-.36.74-.44.98-.44.24 0 .48 0 .68.02.22.02.5-.08.78.6.3.72 1.02 2.48 1.1 2.66.08.18.14.4.02.64-.12.24-.18.4-.36.6-.18.22-.38.48-.54.64-.18.18-.36.38-.16.74.2.36.9 1.5 1.94 2.42 1.34 1.2 2.46 1.58 2.82 1.76.36.18.58.16.78-.06.22-.22.9-1.02 1.14-1.38.24-.36.48-.3.8-.18.32.12 2.06.98 2.42 1.16.36.18.6.26.68.4.1.16.1.9-.2 1.74z"/></svg><span>Escribinos por WhatsApp</span></a>
 
 <script defer src="lib/gsap.min.js"></script>
-<script defer src="lib/ScrollTrigger.min.js"></script><script defer src="main.js?v=20261117w"></script>
+<script defer src="lib/ScrollTrigger.min.js"></script><script defer src="main.js?v=20261117x"></script>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>

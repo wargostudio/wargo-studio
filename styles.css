@@ -770,7 +770,11 @@ em { font-style: normal; color: var(--blue); }
 /* =============================================================
    Proyectos (portfolio)
    ============================================================= */
-.proj-filters { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 2.2rem; }
+.proj-filters { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 1rem; }
+.proj-subfilters { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1rem; padding-left: .2rem; }
+.proj-subfilters[hidden] { display: none; }
+.proj-filter.is-sub { font-size: .8rem; padding: .5rem .9rem; background: transparent; }
+.proj-filter.is-sub[aria-pressed="true"] { background: var(--blue); color: #fff; }
 .proj-filter {
   appearance: none; border: 0; cursor: pointer; font: inherit; font-family: var(--display); font-weight: 700; font-size: .88rem;
   padding: .7rem 1.15rem; border-radius: 999px; background: var(--surface); color: var(--ink-soft);

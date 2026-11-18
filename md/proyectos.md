@@ -8,7 +8,9 @@ url: https://www.wargostudio.com/proyectos.html
 
 Landing pages, sitios web, identidad visual, software y tableros de datos, catálogos, brochures y trabajos en ERP que desarrollamos para empresas, instituciones y emprendimientos.
 
-## Landing pages
+## Diseño y desarrollo web
+
+### Landing pages
 
 - [Teblar](https://teblar.com.ar/): Tela de monofilamento para sombra y protección, con cotización directa por WhatsApp.
 - [Fundación CEEA](https://ceea.com.ar/): Landing institucional para presentar quiénes son, qué hacen y sus valores.
@@ -16,7 +18,7 @@ Landing pages, sitios web, identidad visual, software y tableros de datos, catá
 - [Avícola Alpina](https://avicolaalpina.com.ar/): Landing de la avícola Alpina y Don Giulio: pollos de calidad del campo a la mesa.
 - [Lawgica](https://lawgica.ar/): Estudio de propiedad intelectual que asesora a artistas, creativos y emprendedores.
 
-## Páginas web
+### Páginas web
 
 - [Termas del Sol](https://termasdelsol.com.ar/): Sitio web de complejo turístico con presentación del lugar y de sus servicios.
 - [Hostería El Durazno](https://hosteriaeldurazno.com.ar/): Sitio de hostería de montaña con habitaciones, gastronomía y consulta de disponibilidad.
@@ -44,12 +46,26 @@ Landing pages, sitios web, identidad visual, software y tableros de datos, catá
 - [H2T Proyectos & Ingeniería](https://h2t-ingenieria.com/): Soluciones integrales en instalaciones eléctricas industriales: diseño, instalación y mantenimiento.
 - [YPF Maffía](https://ypfmaffia.com.ar/): Sitio de la estación de servicio de General Pinto, con combustibles, lubricantes y productos.
 
-## E-commerce
+### E-commerce
 
 - [Asociación Argentina de Rosicultura](https://rosicultura.com.ar/): Tienda online de la asociación fundada en 1951 por amantes de las rosas, con venta de cursos y publicaciones.
 - [CerroPlast](https://cerroplast.com/): Tienda online de materiales para obra, jardín y hogar, con catálogo de productos, carrito de compras y sucursales.
 
-## Identidad visual de marca
+## Software a medida y análisis de datos
+
+- Tu Radio: Relevamiento e implementación de la plataforma de radio online de Tu Radio, red de radios: reproductor en vivo, programación y panel de control de la emisión.
+- Casa Propiedad Intelectual: Software de gestión a medida para el estudio: seguimiento de marcas y trámites, plazos y vencimientos, novedades por aprobar y notificaciones.
+- Análisis de campañas de marketing: Tablero para Make con prospectos, conexiones, respuestas y tasas de aceptación y de respuesta por campaña, filtrable por perfil, año y trimestre.
+- Strava Metrics: Tablero de análisis de la actividad deportiva a partir del archivo de Strava: resumen, rendimiento, disciplinas y logros.
+
+## Personalización y gestión de productos en ERP
+
+- CerroPlast: Carga y organización de productos en el ERP: variantes, códigos, imágenes, precios y existencias, con los productos publicados para la venta.
+- Huerta y Cía: Catálogo de productos del ERP publicado en la tienda online de materiales de construcción: códigos, marcas, más vendidos y recomendados.
+
+## Diseño gráfico
+
+### Identidad visual de marca
 
 - [Kash Group Training](https://kashgrouptraining.com/): Identidad visual y sitio para una consultora de capacitaciones a empresas.
 - [E-Fuegos](https://efuegos.com.ar/): Identidad de marca y tienda online de parrillas, hornos y fuegos.
@@ -57,27 +73,15 @@ Landing pages, sitios web, identidad visual, software y tableros de datos, catá
 - [Servteching](https://servteching.com/): Marca y sitio para una empresa de ingeniería y gestión integral de proyectos.
 - [Estudio Fariña](https://estudiofarina.com.ar/): Identidad visual y sitio para un estudio jurídico.
 
-## Relevamiento e implementación de software
-
-- Tu Radio: Relevamiento e implementación de la plataforma de radio online de Tu Radio, red de radios: reproductor en vivo, programación y panel de control de la emisión.
-- Casa Propiedad Intelectual: Software de gestión a medida para el estudio: seguimiento de marcas y trámites, plazos y vencimientos, novedades por aprobar y notificaciones.
-- Análisis de campañas de marketing: Tablero para Make con prospectos, conexiones, respuestas y tasas de aceptación y de respuesta por campaña, filtrable por perfil, año y trimestre.
-- Strava Metrics: Tablero de análisis de la actividad deportiva a partir del archivo de Strava: resumen, rendimiento, disciplinas y logros.
-
-## Catálogos
+### Catálogos
 
 - Estructuras TR: Catálogos de producto en formato A4: estructuras de acero, torres elevadoras y estructuras de aluminio, con la identidad de la marca.
 
-## Brochures
+### Brochures
 
 - Unnivers: Brochure institucional en inglés con el posicionamiento de la marca: World Class Education, con el mensaje Innovate. Transform. Elevate.
 - Ezeivan: Brochure en inglés de traslados privados de pasajeros: flota ejecutiva, premium y de lujo, traslados a aeropuertos y apoyo a aviación privada.
 - Magic Play: Pieza gráfica vertical para la plaza de juegos, con el mensaje Diversión para toda la familia.
 - Tu Radio: Portada de la propuesta comercial 2025 de la red de radios, con la identidad de marca.
-
-## Modificaciones de ERP
-
-- CerroPlast: Carga y organización de productos en el ERP: variantes, códigos, imágenes, precios y existencias, con los productos publicados para la venta.
-- Huerta y Cía: Catálogo de productos del ERP publicado en la tienda online de materiales de construcción: códigos, marcas, más vendidos y recomendados.
 
 Wargo Studio · info@wargostudio.com · +54 9 3518 19-3172 · [WhatsApp](https://wa.me/5493518193172)
