@@ -807,6 +807,8 @@ em { font-style: normal; color: var(--blue); }
 .proj-tag { align-self: flex-start; font: 500 .68rem var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--blue-dark); background: rgba(37,129,196,.1); padding: .3rem .65rem; border-radius: 999px; }
 .proj-tag.is-web { color: #9A5B06; background: rgba(253,166,52,.18); }
 .proj-tag.is-brand { color: var(--ink-soft); background: var(--bg-alt); }
+.proj-tags { display: flex; flex-wrap: wrap; gap: .4rem; }
+.proj-tag.is-managed { color: var(--ink-soft); background: transparent; box-shadow: inset 0 0 0 1px var(--line-strong); }
 .proj-body h3 { font-size: 1.2rem; }
 .proj-body p { color: var(--ink-mute); font-size: .95rem; }
 .proj-link { margin-top: auto; padding-top: .6rem; display: inline-flex; align-items: center; gap: .45rem; font-family: var(--display); font-weight: 700; font-size: .88rem; color: var(--blue-dark); }
@@ -822,4 +824,5 @@ em { font-style: normal; color: var(--blue); }
 .proj-tag.is-ecom { color: #7A2E9E; background: rgba(147,51,234,.12); }
 .proj-tag.is-cat { color: #8A1230; background: rgba(190,30,60,.12); }
 .proj-tag.is-bro { color: #0E5A7A; background: rgba(14,116,160,.12); }
+.proj-tag.is-edit { color: #7A5B00; background: rgba(240,184,40,.2); }
 .proj-tag.is-erp { color: #5B3A7A; background: rgba(113,75,103,.14); }

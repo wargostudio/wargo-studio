@@ -6,7 +6,7 @@ url: https://www.wargostudio.com/proyectos.html
 
 # Proyectos que ya están funcionando
 
-Landing pages, sitios web, identidad visual, software y tableros de datos, catálogos, brochures y trabajos en ERP que desarrollamos para empresas, instituciones y emprendimientos.
+Landing pages, sitios web, identidad visual, software y tableros de datos, catálogos, brochures, diseño editorial y trabajos en ERP que desarrollamos para empresas, instituciones y emprendimientos.
 
 ## Diseño y desarrollo web
 
@@ -45,6 +45,15 @@ Landing pages, sitios web, identidad visual, software y tableros de datos, catá
 - [SAMIT](https://samit.com.ar/): Maquinaria para la construcción comercializada en todo el país, con equipos, posventa y novedades.
 - [H2T Proyectos & Ingeniería](https://h2t-ingenieria.com/): Soluciones integrales en instalaciones eléctricas industriales: diseño, instalación y mantenimiento.
 - [YPF Maffía](https://ypfmaffia.com.ar/): Sitio de la estación de servicio de General Pinto, con combustibles, lubricantes y productos.
+- [Staffwise](https://staffwise.com.ar/): Consultora de reclutamiento y selección de personal en Córdoba, con soluciones para cubrir posiciones clave en distintos rubros.
+- [Cattaneo y Asociados](https://cattaneoyasociados.com/): Estudio contable con más de 30 años de experiencia: planificación financiera, gestión fiscal y contabilidad para empresas.
+- [Trüben](https://truben.com.ar/): Ingeniería de servicios: mantenimiento y ejecución de obras civiles e industriales de manera rentable y sostenible.
+- [Agrotec Argentina](https://agrotecargentina.com.ar/): Industria metal-mecánica de Laguna Larga, Córdoba, con 35 años fabricando implementos agrícolas: guadañadoras, extractores y arrancadoras. Sitio administrado por Wargo Studio.
+- [Podio Soluciones Técnicas](https://podiorefrigeracion.com/): Refrigeración, climatización, electricidad industrial y piping en Luque, Córdoba, con pedido de cotización por WhatsApp. Sitio administrado por Wargo Studio.
+- [Espacio Consultores](https://espacioconsultores.com.ar/): Consultora de especialistas que trabaja junto al cliente, con una metodología en cuatro etapas: apropiación, blue print, construcción y despliegue. Sitio administrado por Wargo Studio.
+- [Ulla Ingeniería](https://ullaingenieria.com.ar/): Asesoría experta en proyectos de infraestructura, con un enfoque multidisciplinario en soluciones integrales de ingeniería. Sitio administrado por Wargo Studio.
+- [Conmeca](https://conmeca.com.ar/): Construcciones mecánicas: cintas transportadoras, rodillos, tambores y estructuras, con obras de ingeniería y montaje. Sitio administrado por Wargo Studio.
+- [Hidraulic Solución](https://hidraulicsolucion.com.ar/): Venta de repuestos y servicios de hidráulica para el sector agrícola: reparación y puesta a punto en tractores, sembradoras y pulverizadores. Sitio administrado por Wargo Studio.
 
 ### E-commerce
 
@@ -83,5 +92,9 @@ Landing pages, sitios web, identidad visual, software y tableros de datos, catá
 - Ezeivan: Brochure en inglés de traslados privados de pasajeros: flota ejecutiva, premium y de lujo, traslados a aeropuertos y apoyo a aviación privada.
 - Magic Play: Pieza gráfica vertical para la plaza de juegos, con el mensaje Diversión para toda la familia.
 - Tu Radio: Portada de la propuesta comercial 2025 de la red de radios, con la identidad de marca.
+
+### Diseño editorial
+
+- Unnivers Hive Model: Diseño editorial del informe Hive Model Report 2025: portada con la identidad de marca y el patrón de paneles hexagonales.
 
 Wargo Studio · info@wargostudio.com · +54 9 3518 19-3172 · [WhatsApp](https://wa.me/5493518193172)
